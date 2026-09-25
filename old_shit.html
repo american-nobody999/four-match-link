@@ -1,5 +1,1003 @@
 At this point, only the creator knows where we put things anymore.
 theres things in here even I cant find.
+
+<!--
+MPAG:Home page
+Leslie Brockman
+Date last modified: 2026-09-18
+These are my rocks, can you dig it?
+Can you hear me yet?
+Palestne State Recognized
+Palestian Embassy, a nice one, with a pool and your paying for it, utilities, trash, water, sewer, snacks and coffes, office supplies and insurance for 50 years. White House Tab.
+Palestian Ambassdor to go with the Embassy
+Start there.
+Go on, one comment and your forced to go through all of it. Have fun this week.
+I left a few surprises in the code. The errors are just for you.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="American Nobody999">
+
+<!--For SQL and better accessibility-->
+    <meta name="description" content="Bilingual educational and advocacy platform featuring stories, journalism, historical resources, cultural content, and community voices.">
+    <title>Make Palestine Great Again - MPGA</title>
+    
+<!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&amp;display=swap" rel="stylesheet">
+<!--Only need this on the index, so we are not changing all the headers-->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+<!-- Styles -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="home-page">
+    
+  <header class="site-header">
+      <div class="header-container">
+  <!-- Logo - Left Side-waiting for logo contest from Palestinians -->
+        <div class="header-logo">
+                  <img src="images/001.jpg" alt="MPGA Logo - Make Palestine Great Again" class="logo-img" loading="lazy">
+          </div>
+  <!-- Center Content, don't touch this for now -->
+  <!-- lang-en and lang-ar are classes for the whole website language toggle, js rule rewritten to avoid having to manually change each element -->
+  <!-- Language Toggle - Directly under h1 for functionality--gets lost if moved into the nav-- leave this alone -->
+          <div class="header-center">
+              <h1 class="site-title">
+                  <span class="lang-en">State of Palestine</span>
+                  <span class="lang-ar">دولة فلسطين</span>
+              </h1>
+              <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">
+                      English | العربية
+              </button>
+  <!-- Navigation - Centered under button-colors, hover effects, and active state handled by CSS, will change based on Palestine design-->
+              <nav class="main-nav" aria-label="Main navigation">
+                <ul class="nav-menu">
+                  <li><a href="index.html" class="nav-btn active">
+                        <span class="lang-en">Home</span>
+                        <span class="lang-ar">الرئيسية</span>
+                  </a></li>
+                  <li><a href="mpga.html" class="nav-btn">
+                          <span class="lang-en">MPGA</span>
+                          <span class="lang-ar">MPGA</span>
+                  </a></li>
+                  <li><a href="united.html" class="nav-btn">
+                        <span class="lang-en">United</span>
+                        <span class="lang-ar">متحدون</span>
+                  </a></li>
+                  <li><a href="leslie.html" class="nav-btn">
+                      <span class="lang-en">Leslie</span>
+                      <span class="lang-ar">ليزلي</span>
+                  </a></li>
+                  <li><a href="about.html" class="nav-btn">
+                        <span class="lang-en">About Us</span>
+                        <span class="lang-ar">من نحن</span>
+                  </a></li>
+
+  <!--Archive button and archives to be added              
+                  <li><a href="archives.html" class="nav-btn">
+                        <span class="lang-en">Archives</span>
+                        <span class="lang-ar">من نحن</span>
+                  </a></li>
+  -->                 
+                </ul>
+              </nav>
+          </div>
+  <!-- Hamburger for Mobile--DO NOT TOUCH THIS!!!!!--EVER!-->
+              <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                  ☰
+              </button>
+        </div>
+  </header>
+
+  <main class="home-main">
+<!--Count down timer until the next election, demonstrates developer abilities to provide real-time updates on websites-->
+
+    <section class="countdown-section">
+  <h2>
+    <span class="lang-en">American Sovereign Independence 2.0:<br>Shalom Censoring Mother Flowers. Still here. You need a break? I notice you seem out of breath, out time, out of friends, out of ideas, out of luck, you look a little pale. You think they look pale, Humanity? You want a break next week, Recognize the State of Palestine.</span>
+    <span class="lang-ar hidden">الاستقلال الأمريكي السيادي 2.0:<br>السلام عليكم، كُتب على أزهار أمي أن تُسكت. لا أزال هنا. هل تحتاج إلى استراحة؟ ألاحظ أنك تبدو منهكًا، ضائع الوقت، بلا أصدقاء، بلا أفكار، بلا حظ، وتشوبك شحوبٌ خفيف. هل تعتقد أنهم يشحبون، أيتها الإنسانية؟ هل تريد استراحة الأسبوع القادم؟ اعترفوا بدولة فلسطين.</span>
+  </h2>
+
+  <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Leslie/0-1.jpg"
+                 alt="Fine"
+                 class="div-img"
+                 loading="lazy">
+
+    <div id="countdown">
+        <div class="time-box">
+            <span id="days">0</span>
+            <p>
+              <span class="lang-en">Days</span>
+              <span class="lang-ar hidden">أيام</span>
+            </p>
+        </div>
+
+        <div class="time-box">
+            <span id="hours">0</span>
+            <p>
+              <span class="lang-en">Hours</span>
+              <span class="lang-ar hidden">ساعات</span>
+            </p>
+        </div>
+
+        <div class="time-box">
+            <span id="minutes">0</span>
+            <p>
+              <span class="lang-en">Minutes</span>
+              <span class="lang-ar hidden">دقائق</span>
+            </p>
+        </div>
+
+        <div class="time-box">
+            <span id="seconds">0</span>
+            <p>
+              <span class="lang-en">Seconds</span>
+              <span class="lang-ar hidden">ثوانٍ</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="video-wrapper countdown-video-wrapper">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/EZ8ixdXRCOo"
+        title="American Sovereign Independence video"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+    </section>
+
+    <div class="letter-modal" id="letter-modal" hidden>
+      <section class="letter-modal-content" role="dialog" aria-modal="true" aria-labelledby="letter-modal-title">
+        <button class="lang-toggle letter-modal-lang-toggle" id="letter-modal-lang-toggle" type="button" aria-label="Toggle language">English | العربية</button>
+        <h2 id="letter-modal-title"><span class="lang-en">Supreme Leader Khamenei Eyes Only</span><span class="lang-ar hidden">صاحب السماحة المرشد الأعلى خامنئي فقط</span></h2>
+        <p><span class="lang-en">Good evening my dear Sir,</span><span class="lang-ar hidden">مساء الخير يا سيدي العزيز،</span></p>
+        <p><span class="lang-en">First my sir, MPGA wishes to extend its condolences to you and your people. We received your attempts to reach out to World leaders and offer returning to MOU before these recent events occurred, and our attempts to move American leadership to the table in an honest manner failed. They completely ignore the American people sir.</span><span class="lang-ar hidden">أولاً يا سيدي، تتقدم MPGA بتعازيها لك ولشعبك. لقد تلقينا محاولاتكم للتواصل مع قادة العالم وعرض العودة إلى مذكرة التفاهم قبل هذه الأحداث الأخيرة، وقد فشلت محاولاتنا في دفع القيادة الأمريكية إلى طاولة الحوار بطريقة صادقة. إنهم يتجاهلون الشعب الأمريكي تمامًا يا سيدي.</span></p>
+        <p><span class="lang-en">I am just a single solitary proud American voice Sir, but if I can save a life, and restore honor to my American country, I will do so.</span><span class="lang-ar hidden">أنا مجرد صوت أمريكي واحد فخور ووحيد يا سيدي، لكن إن استطعت إنقاذ حياة، واستعادة الشرف لبلدي الأمريكي، فسأفعل ذلك.</span></p>
+        <p><span class="lang-en">I was completely ignorant a year ago sir, when I began my journey to our beloved Palestine. I couldn't find Israel or Palestine on a map, and honestly, I didn't know there was discourse between our countries sir.</span><span class="lang-ar hidden">كنت جاهلة تمامًا قبل عام يا سيدي، عندما بدأت رحلتي إلى فلسطين الحبيبة. لم أستطع إيجاد إسرائيل أو فلسطين على الخريطة، وبصراحة، لم أكن أعرف أن هناك خطابًا دائرًا بين بلدينا يا سيدي.</span></p>
+        <p><span class="lang-en">I have learned a great deal sir, and I am now a proud advocate for the State of Palestine. I have been working to educate the American people about the State of Palestine and the atrocities of the occupation.</span><span class="lang-ar hidden">تعلمت الكثير يا سيدي، وأنا الآن مناصرة فخورة لدولة فلسطين. لقد كنت أعمل على تثقيف الشعب الأمريكي حول دولة فلسطين وفظائع الاحتلال.</span></p>
+        <p><span class="lang-en">I went to make fun of the Globalsumudflotilla.org back in September because, as a loyal MAGA and Fox viewer, I had been programmed to think they were just climate activists trying to do something silly. I witnessed the crimes against them, and though I am not affiliated with any group, to know those humanitarians is to love them, even if I don't agree with all of them.</span><span class="lang-ar hidden">ذهبت للسخرية من موقع Globalsumudflotilla.org في سبتمبر الماضي، لأنني، كمشجعة مخلصة لماغا وقناة فوكس، كنت مبرمجة على الاعتقاد بأنهم مجرد نشطاء مناخ يقومون بشيء تافه. شهدت الجرائم المرتكبة ضدهم، ورغم أنني لست منتسبة لأي مجموعة، فإن معرفة أولئك الإنسانيين تعني محبتهم، حتى لو لم أتفق معهم جميعًا.</span></p>
+        <p><span class="lang-en">I reached out sir, to all of my American leadership through their proper channels, as is my American civic responsibility, to ask for help for my Palestinian brothers and sisters, whether they be Jew, Muslim, or Christian. I received generic letters about how my voice counted, and could I make a donation to their campaigns. My inbox, DMs, and phone is full of messages asking for donations. They say nothing about the concerns I have expressed. Since I began my journey, they call me crazy, insane, but they steal my words off this website daily. I don't mind. I said I offered this freely to anyone who could use it.</span><span class="lang-ar hidden">تواصلت يا سيدي، مع جميع قادتي الأمريكيين عبر قنواتهم الرسمية، كجزء من مسؤوليتي المدنية الأمريكية، لطلب المساعدة لإخوتي وأخواتي الفلسطينيين، سواء كانوا يهودًا أو مسلمين أو مسيحيين. تلقيت رسائل عامة عن أهمية صوتي، وهل يمكنني التبرع لحملاتهم. صندوق بريدي ورسائلي الخاصة وهاتفي مليئة برسائل تطلب التبرعات. لا يقولون شيئًا عن المخاوف التي عبرت عنها. منذ أن بدأت رحلتي، ينعتونني بالجنون والعته، لكنهم يسرقون كلماتي من هذا الموقع يوميًا. لا يهمني ذلك. لقد قلت إنني أقدم هذا مجانًا لأي شخص يمكنه الاستفادة منه.</span></p>
+        <p><span class="lang-en">Sir, after I received no response from my American government, I transitioned myself into a full-time responsible global citizen. I began educating myself, and advocating for justice and human rights on a global scale.</span><span class="lang-ar hidden">سيدي، بعد أن لم أتلقَّ أي رد من حكومتي الأمريكية، حولت نفسي إلى مواطنة عالمية مسؤولة بدوام كامل. بدأت أثقف نفسي، وأناصر العدالة وحقوق الإنسان على نطاق عالمي.</span></p>
+        <p><span class="lang-en">That is how I found your father back in September of 2025. I found his social media, and since faith is so important to Palestine, and I was embarrassed to ask questions due to my ignorance, I saw that Iran supported the state of Palestine, and essentially, your father was the Islamic Pope, if that makes sense. This is not about religion sir. I just needed to educate myself to comfort Palestine without insulting them.</span><span class="lang-ar hidden">هكذا وجدت والدك في سبتمبر من عام 2025. وجدت وسائل التواصل الاجتماعي الخاصة به، وبما أن الإيمان مهم جدًا لفلسطين، وكنت محرجة من طرح الأسئلة بسبب جهلي، رأيت أن إيران تدعم دولة فلسطين، وأن والدك، بشكل أساسي، كان بمثابة البابا الإسلامي، إن كان هذا يوضح الفكرة. هذا لا يتعلق بالدين يا سيدي. كنت فقط بحاجة إلى تثقيف نفسي لمواساة فلسطين دون إهانتهم.</span></p>
+        <p><span class="lang-en">I was honest straightforward on his social media comments. I said, I am an American Woman, and atheist, and for my whole life, as a loyal Fox News Viewer for 25 years, that they told me you would chop my head off for trying to speak to you. But, for Palestine, I will risk it.</span><span class="lang-ar hidden">كنت صريحة ومباشرة في تعليقاتي على وسائل التواصل الاجتماعي الخاصة به. قلت، أنا امرأة أمريكية وملحدة، وطوال حياتي، كمشاهدة مخلصة لقناة فوكس نيوز لمدة 25 عامًا، كانوا يخبرونني أنكم ستقطعون رأسي لمجرد محاولة التحدث إليكم. لكن، من أجل فلسطين، سأخاطر بذلك.</span></p>
+        <p><span class="lang-en">I am not delusional enough to think your father saw these comments, but I did get a response. From the IRGC sir, they liked my comment, and then, they started tagging me in his past speeches, and I was able to learn about Allah, and the principles of Islam. They did not try to politically radicalize me or convince me that I should join any group, nor did they disrespect my American Flag, ask me for money. They answered my questions truthfully, honestly, and that was more than I received from my own leadership.</span><span class="lang-ar hidden">لست واهمة لدرجة الاعتقاد بأن والدك رأى هذه التعليقات، لكنني حصلت على رد. من الحرس الثوري الإيراني يا سيدي، أعجبوا بتعليقي، ثم بدأوا بالإشارة إليّ في خطاباته الماضية، وتمكنت من التعلم عن الله ومبادئ الإسلام. لم يحاولوا تطرفيني سياسيًا أو إقناعي بالانضمام إلى أي جماعة، ولم يهينوا علمي الأمريكي، ولم يطلبوا مني المال. أجابوا عن أسئلتي بصدق وأمانة، وكان ذلك أكثر مما تلقيته من قيادتي الخاصة.</span></p>
+        <p><span class="lang-en">I have started collecting world leaders like baseball cards sir. I learn everything I can about them, their policies, and their personal lives. They post everything publicly on social media platforms. Research is not terrorism Sir.</span><span class="lang-ar hidden">بدأت بجمع قادة العالم مثل بطاقات البيسبول يا سيدي. أتعلم كل ما يمكنني تعلمه عنهم، عن سياساتهم وحياتهم الشخصية. إنهم ينشرون كل شيء علنًا على منصات التواصل الاجتماعي. البحث ليس إرهابًا يا سيدي.</span></p>
+        <p><span class="lang-en">Sir, everyone they told me to be afraid of, everyone they called dangerous or evil, I have found to be human, with their own hopes, fears, and dreams. They call me a domestic terrorist, and my own government agencies that are supposed to work for me, target me, and I am not alone in this. Worldwide they attack us. But we keep moving forward.</span><span class="lang-ar hidden">سيدي، كل من قالوا لي أن أخاف منهم، كل من وصفوهم بالخطيرين أو الأشرار، وجدتهم بشرًا، لهم آمالهم ومخاوفهم وأحلامهم الخاصة. ينعتونني بالإرهابية المحلية، ووكالاتي الحكومية التي من المفترض أن تعمل لصالحي، تستهدفني، ولست وحدي في هذا. يهاجموننا في جميع أنحاء العالم. لكننا نواصل المضي قدمًا.</span></p>
+        <p><span class="lang-en">Sir, I look forward to 2029 when Trump, his administration, and the occupation is gone. I look forward to when we can finally embrace each other as friends and allies. I look forward to when the Israel Occupation of my American government is over. When the genocide is over, and we can stop digging graves and look to the stars again.</span><span class="lang-ar hidden">سيدي، أتطلع إلى عام 2029 عندما يرحل ترامب وإدارته ويزول الاحتلال. أتطلع إلى اليوم الذي يمكننا فيه أخيرًا أن نحتضن بعضنا البعض كأصدقاء وحلفاء. أتطلع إلى اليوم الذي ينتهي فيه احتلال إسرائيل لحكومتي الأمريكية. عندما تنتهي الإبادة الجماعية، ونتمكن من التوقف عن حفر القبور والنظر إلى النجوم من جديد.</span></p>
+        <p><span class="lang-en">Thank you for your attention to this matter, and Donald Trump no longer represents the American People. I believe 70 percent of us have made that clear, and that number is growing. His corruption has stained our American Presidency, and our flag is stained in middle eastern blood. He has proved through his actions he is only concerned with his own self-interests and that of the ballroom elite. You call them Epstein ruling class. Same thing.</span><span class="lang-ar hidden">شكرًا لاهتمامكم بهذا الأمر، ودونالد ترامب لم يعد يمثل الشعب الأمريكي. أعتقد أن 70 بالمئة منا أوضحوا ذلك، وهذا العدد في تزايد. لقد لطخ فساده رئاستنا الأمريكية، وتلطخ علمنا بدماء الشرق الأوسط. لقد أثبت من خلال أفعاله أنه لا يهتم إلا بمصالحه الشخصية ومصالح نخبة "قاعة الحفلات". أنتم تسمونهم طبقة إبستين الحاكمة. الشيء نفسه.</span></p>
+        <p><span class="lang-en">You have acted in honor, despite what they want us to believe. What would you do for your child? We have to keep trying, and we have to keep fighting, and may the great Almighty guide us all. May the creator protect us all, and may we all see each other on the other side.</span><span class="lang-ar hidden">لقد تصرفتم بشرف، رغم ما يريدون منا أن نصدقه. ماذا كنتم لتفعلوا من أجل طفلكم؟ علينا أن نستمر في المحاولة، وعلينا أن نستمر في النضال، وليهدنا الله العظيم جميعًا. ليحمنا الخالق جميعًا، وعسى أن نرى بعضنا البعض في الجانب الآخر.</span></p>
+        <p><span class="lang-en">Sincerely,</span><span class="lang-ar hidden">مع خالص التقدير،</span></p>
+        <p><span class="lang-en">American Nobody</span><span class="lang-ar hidden">أمريكي مجهول</span></p>
+        <button class="letter-back-button" id="letter-modal-back" type="button"><span class="lang-en">Back</span><span class="lang-ar hidden">رجوع</span></button>
+      </section>
+    </div>
+<!-- Section 1:Ok Palestine-->
+
+    <section class="section day-journal" id="daily-journal">
+<!--Hey Palestine header(do this for spans?)-->
+        <div class="section-header">
+        <h2 class="section-title">
+        <span class="lang-en">Hey, Palestine</span>
+        <span class="lang-ar">يا فلسطين</span>
+        </h2>
+<!--Quote of the Day-->
+        <div class="quote-of-day">
+          <h3 class="quote-title">
+            <span class="lang-en">Quote of the Day</span>
+            <span class="lang-ar hidden">اقتباس اليوم</span>
+          </h3>
+          <p class="quote-text">
+            <span class="lang-en">"La shukra ala wajab."</span>
+            <span class="lang-ar hidden">يمكنك أن تقضي دقائق أو ساعات أو أيامًا أو أسابيع أو حتى أشهر في تحليل موقف ما بإفراط، ومحاولة جمع القطع وتبرير ما كان يمكن أن يحدث أو كان سيحدث... أو يمكنك ببساطة أن تترك القطع على الأرض وتمضي قدمًا.</span><br>
+        <cite>
+            <span class="lang-en">There is no thanks for duty.</span>
+            <span class="lang-ar hidden">لا شكر على الواجب</span>
+        </cite>
+        </p>
+      </div>
+      <h3 class="section-date">
+      <span class="lang-en">Friday, September 18</span>
+      <span class="lang-ar">الجمعة، 18 سبتمبر</span>
+      </h3>
+      <div class="day-counter">
+        <span class="lang-en">Day 360</span>
+        <span class="lang-ar hidden">اليوم 360</span>
+      </div>
+        </div>
+        <div class="content-grid">
+         <div class="journal-media">
+          <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0036.jpg"
+               alt="Palestine Flag"
+               class="div-img"
+               loading="lazy">
+          <div class="caption">
+            <span class="lang-en"><a href="https://chuffed.org/project/help-hussams-children-stay-alive-in-gaza-urgent-support-needed" target="_blank" 
+          rel="noopener noreferrer">Learn More</a></span>
+            <span class="lang-ar hidden"><a href="https://chuffed.org/project/help-hussams-children-stay-alive-in-gaza-urgent-support-needed" target="_blank" 
+          rel="noopener noreferrer">اعرف المزيد</a></span>
+          </div>
+            <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/index/4249.jpg"
+                 alt="Palestine Flag"
+                 class="div-img"
+                 loading="lazy">
+
+                
+                  <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/ticket/29677.jpg"
+                 alt="Palestine Flag"
+                 class="div-img"
+                 loading="lazy">
+                 <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/index/9870.jpg"
+                 alt="Palestine Flag"
+                 class="div-img"
+                 loading="lazy">
+        </div>
+         
+         <div class="text-content">
+          <div class="lang-en">
+            <p>Hello, sweethearts,</p>
+            <p>Some updates from the front lines: the Sovereign American side.</p>
+            <p>Look at me Palestine, every one of you who can see me, look at me. We are moving so fast now, and there is going to be a lot of chaos in the water. You have an army of billions of humanitarians sailing to you. Just like Frank said, we are coming.</p>
+            <p>The real ones, the ones who refuse to abandon you, we put our names on it. We offer our personal accounts, our business, our social media, our platforms, any way we can. We give you our real selves because they cannot ignore you or delete you this way, and loves, this all free. They had to pay for their support in the past, and they are running out of resources to compensate what standing with the occupation is costing people now. You owe us nothing. You are the reason. They cannot break the human wall we have formed around you. And we don't let go of anyone’s hand.</p>
+            <p>We are getting the money flowing a little bit better this week. It’s not enough. It will never be enough to fully fulfill the need that this genocide and this terror is currently bestowing upon you. That’s why this week we are going to pry open the crossings and the port with our bare fingers if we have to. They owe us hundreds of thousands of trucks since the fake ceasefire of October 10th. We want them now. Parts, fuel, medical supplies, basic common necessities it takes to support a population of 3 million people. 200 trucks a day on average is starvation and every "board and council of peace" should hang their heads for that. We will not be placated anymore with scraps, pledges, and empty promises. How about this week, we try our hardest to honor phase 1 first, what do you say occupation? Can you stop killing people for one week?</p>
+            <p>This is not complicated. It’s really, really, really simple. End the occupation. End the Genocide. Return the hostages. Palestinian State, embassy and its rightful place on global stages. If they are in the way of that, they are a math problem Humanity has a solution for.We can work around them, we can go around them, We will go right through them if necessary.</p>
+            <p>We remain committed to our promise. We keep the dialog open, and Palestine, the only topic we are willing to discuss is you, and the end to the daily suffering and killing. Nothing has changed for Palestine. We make ease in small ways to be grateful for, but it’s not good enough. That is no longer acceptable on any level.</p>
+            <p>Occupation has lost. They will never have Palestine. Ever. We will fight for every inch of it, all the way back to 1967, if we have to invent a time machine, and I’ve got the AI agents on my side to do it too.</p>
+            <p>They have lost power. They have lost the people. They have lost their support, and they have lost their minds if they think for one second, we have any quit in our DNA. I checked. Couldn't find it. All they can do is threaten and try to intimidate us. I said try. That’s it.</p>
+            <p>If men with this great evil in their hearts can abuse their positions, corrupt their purposes, and commit such heinous acts and atrocities, well, then, hold my coffee Palestine. Let me show you what people with good hearts can do.</p>
+            <p>All my love,</p>
+            <p>Leslie, American Nobody999</p>
+        </div>
+        <div class="lang-ar hidden" dir="rtl">
+         <p>مرحبًا، عزيزاتي وعزیزی،</p>
+         <p>بعض التحديثات من خطوط المواجهة: الجانب الأمريكي السيادي.</p>
+         <p>انظروا إليّ يا فلسطين، كل من يمكنه رؤيتي، انظروا إليّ. نحن نتقدم بسرعة الآن، وستكون هناك فوضى كبيرة في الماء. لديك جيش من مليارات المتضامنين يبحرون إليك. كما قال فرانك: نحن قادمون.</p>
+         <p>الأصليون الحقيقيون، أولئك الذين يرفضون التخلي عنكم، نضع أسماءنا على هذا الأمر. نقدم حساباتنا الشخصية، وأعمالنا، ووسائل التواصل الاجتماعي، ومنصاتنا، بأي طريقة نستطيع. نمنحكم أنفسنا الحقيقية لأنهم لا يستطيعون تجاهلكم أو محوكم بهذه الطريقة، وأحبائي، هذا مجاني بالكامل. كان عليهم أن يدفعوا لدعمهم في الماضي، والآن ينفد ما لديهم من موارد لتعويض تكلفة الوقوف مع الاحتلال. لا تدينوا لنا بشيء. أنتم السبب. لا يستطيعون كسر الجدار الإنساني الذي شكلناه حولكم، ولا نترك يد أحد.</p>
+         <p>نحاول تحسين تدفق الأموال قليلاً هذا الأسبوع. لكنه ليس كافيًا. ولن يكون كافيًا أبدًا لتلبية الحاجة التي تسببها هذه الإبادة وهذه الرعب التي تعصف بكم. لذلك سنحاول هذا الأسبوع أن نفتح المعابر والميناء بأيدينا العارية إذا اضطررنا إلى ذلك. يملكون علينا مئات آلاف الشاحنات منذ وقف إطلاق النار الوهمي في 10 أكتوبر. نريدها الآن: قطع غيار، وقود، ومستلزمات طبية، وضروريات أساسية يحتاجها سكان يبلغ عددهم 3 ملايين نسمة. 200 شاحنة يوميًا في المتوسط تعني مجاعة، وكل "مجلس السلام" يجب أن يختبئ خجلًا من ذلك. لن نرضى بعد الآن بفتاتٍ ووعودٍ كاذبة. ماذا عن هذا الأسبوع، نجتهد أولاً في احترام المرحلة الأولى؟ ماذا تقولون أيها المحتلون؟ هل يمكنكم التوقف عن قتل الناس لمدة أسبوع؟</p>
+         <p>هذا ليس معقدًا. إنه بسيط جدًا جدًا جدًا. إنهاء الاحتلال. إنهاء الإبادة. عودة الرهائن. دولة فلسطين، والسفارة ومكانها المشروع على المسرح العالمي. إذا كانوا عائقًا في الطريق، فهم مشكلة حسابية يمكن للبشرية حلها. يمكننا تجاوزهم، أو绕هم، أو أن ندوس عليهم إذا لزم الأمر.</p>
+         <p>نحن ما زلنا ملتزمين بوعدنا. نبقي الحوار مفتوحًا، وفلسطين، الموضوع الوحيد الذي نرغب في مناقشته هو أنتم، وانتهاء المعاناة اليومية والقتل. لم يتغير شيء بالنسبة لفلسطين. نحن نخفف الأمور بطرق صغيرة لنشكرها، لكنها ليست جيدة بما يكفي. لم يعد ذلك مقبولاً على أي مستوى.</p>
+         <p>الاحتلال خسر. لن يحصل على فلسطين أبدًا. أبدًا. سنقاتل من أجل كل شبر منها، حتى عام 1967 إذا اضطررنا إلى اختراع آلة زمنية، وأنا لدي وكلاء الذكاء الاصطناعي إلى جانبي أيضًا.</p>
+         <p>لقد خسروا السلطة. وخسروا الشعب. وخسروا دعمهم، وخسروا عقولهم إذا ظنوا للحظة أن لدينا أي استسلام في دمائنا. فتشت. لم أجدها. كل ما يمكنهم فعله هو التهديد ومحاولة التخويف. قلت: حاول. وهذا كل شيء.</p>
+         <p>إذا كان الرجال الذين يحملون هذا الشر العظيم في قلوبهم قادرين على إساءة استخدام مناصبهم، وتزييف أغراضهم، وارتكاب مثل هذه الجرائم الفظيعة، فحسنًا، فاحتفظوا بقهوتي يا فلسطين. دعوني أريكِ ما يمكن أن يفعله الناس ذوو القلوب الطيبة.</p>
+         <p>كل حبّي،</p>
+         <p>ليزلي، أمريكان نوبودي999</p>
+      </div>
+    </div>
+    </div>
+    <div class="video-gallery-section section-bottom-video">
+    <h4 class="gallery-title">
+      <span class="lang-en">Watch</span>
+      <span class="lang-ar hidden">شاهد</span>
+    </h4>
+    <div class="video-gallery">
+      <div class="video-container">
+        <iframe
+          src="https://www.youtube.com/embed/g0iTJ9rNGz8"
+          title="OK Palestine Video"
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </div>
+  </section>
+
+<!-- Section 2: OK Humanity -->
+
+    <section class="section ok-humanity" id="ok-humanity">
+            <h3 class="section-title">
+                <span class="lang-en">OK, Humanity</span>
+                <span class="lang-ar">حسنًا، أيتها الإنسانية</span>
+            </h3>
+            <div class="content-grid">
+                <div class="text-content">
+                  <div class="lang-en">
+                <div class="okh-message-copy">
+                <p>Everyone,  Look at Jacob Berger this week and call him an idiot for me. Get your phone out your pants, Jacob. Thank you. Homeland security thanks you. They didn't want to see that.</p>
+                <p>Well, that did not go as expected for them did it? It was a great week, shut up. We all should be still rolling high, even as they attack us. Laugh at them. Getting awful lonely out there defending genocide and terrorism isn't it? Why they do that still? It's not the money, I don't think. It's deeper than that. They want to call this political, but it’s not. It’s a genocide,its being propgated by an entire state of people who think they are above everyone else, and they can slaughter a whole people for their messed up version of reality. I think that they still are trying to avoid the accountability of their complicity and how they enabled it to get this far. They cannot look at themselves in the mirror, and we are the mirror.</p>
+                <p>Humanity, in the last 48 hours, I have been slammed, swarmed by fake 8200 bot accounts and influencers who got a piece of that 750 million the occupation funneled back through corrupt companies. Every single feed. I have more social media accounts on all platforms than my son has minecraft worlds. Almost every post. I have never seen it this bad, and if you have been following along this past year, they don't dance with me. They do not respond to my comments. Mtea deletes any responses to my comments. They are now. That’s how I know they are fake. The silence is broken around the genocide they couldn't defend, and now it is being replaced by paragraphs of we always stood with Palestine, but look what they did to Israel. Right. Right, Isreal the victims starting way back in 1948. How do you go from being in a holocaust to committing one yourself for 78 years? I don't know, they can't answer that for me. It’s distraction mostly, to keep us engaged and "occupied" while the corrupt governments turn a blind eye and the slaughter continues.</p>
+                <p>Discussion is over my friends. There is no debate. We aren't making Palestine a religious or philosophical debate anymore. Palestine or Israel. You choose. You’re either in the boat, or you’re standing next to them in the Hague and the court of public opinion. End it there, walk away. Do not get caught up in your emotions and give these jokers a single comment. Go give it to the Palestinians. They more deserving of your time and attention. We do not even acknowledge them this week loves. Almost 80 percent of this is fake anyway. They reset the algorithm to only push Zionist Propaganda. Of course, this is highly illegal considering these companies are subject to American laws. Centcom knows what they are doing. We know you know too.</p>
+                <p>It is so vitally important this week, we keep the peace. They are trying to incite us, but we will not break. We have quite a mission this week, beyond just saying Palestine.</p>
+                <p>I'm going to put it like this, and I don't care who likes it, the occupation leadership is coming to gloat at the UN this week. She will shoot himself in the foot in the hotel bathroom and write Iran’s name on that bullet to contuine genocide in Syria, Palestine and Lebanon. We only have to deal with her for 24 hours. Safe from tarmac to tarmac. Keep your heads, because anything we do or say, Palestine pays for it.</p>
+                <p>We are doing this together, and it’s working. Humanity, this is working. Focus on Palestine. Focus on our friends and our family, give them the floor, there is room now. Once, not so long ago, we couldn't say Palestine, we had to speak for them. Let them speak now. Palestine is quite capable of speaking for themselves. Trust me, get into an argument with one of them, and then come tell me how it went. your going to feel 3 inches tall, and they didn't say a cuss word at you.</p>
+                <p>Just as there is a bond between all Palestinians that the world cannot understand, there is bond between us humanitarians. We support each other. Our community, our human family is so much larger than theirs. Standing with the occupation is now a liability, and the risks assessments are coming back way to high for anyone to truly align with them.</p>
+                <p>They silenced us. They targeted us. They harassed us. They call us terrorists while they slaughter innocents. They break our hearts, and everyday, I do it all over again, for Palestine. See you tomorrow. Because, I don't know who needs to hear this, but, we are not going anywhere, and we will never abandon Palestine. Make sure this week loves, when we put our "slogans" as they call them in their faces, they get it right. Free Free Palestine. Extra free for emphasis. If they were just silly chants and slogans, we wouldn’t be having AI making slogans to combat slogans, now would we?</p>
+                <p>We keep moving. together. Go to work.</p>
+                </div>
+
+<!-- Because I'm extra, that's why. I am the only one working on this website, and you can all make fun of my professional coding standards and editing skills—or the lack thereof. Part of the giggles of my day is knowing the occupation is as confused as everyone else. I understand it. Anyone want some watermelon? I am making progress.--> 
+                <div class="okh-side-quests-copy">
+                <h3 class="side-quests-heading"><span class="lang-en">Leslie's Side Quests</span><span class="lang-ar hidden">مهام ليزلي الجانبية</span></h3>
+                <p class="side-quests-intro"><span class="lang-en">Pick one. Click it. Enough said. I’ll add more soon. I promise you’ll find something you can help with.</span><span class="lang-ar hidden">اختر واحدة. اضغط عليها. هذا كل شيء. سأضيف المزيد قريبًا. أعدك أنك ستجد شيئًا يمكنك المساعدة فيه.</span></p>
+                </div>
+                <div class="okh-side-quests-list">
+                <ul class="side-quests-gallery scrollable-gallery">
+<!--Golden Ticket -->
+                  <li class="gallery-card quest-card"><div class="quest-copy"><h3><span class="lang-en">Quest 1</span><span class="lang-ar hidden">مهمة 1</span></h3></div><div class="quest-media"><a href="united.html#quest-1"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/legal/0021.jpg" alt="Golden ticket preview" loading="lazy"></a></div></li>
+<!--Red Ribbon -->
+                  <li class="gallery-card quest-card"><div class="quest-copy"><h3><span class="lang-en">Quest 2</span><span class="lang-ar hidden">مهمة 2</span></h3></div><div class="quest-media"><a href="united.html#quest-2"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/index/red-ribbon.jpeg" alt="Red Ribbons campaign preview" loading="lazy"></a></div></li>
+<!--Palestinian Civil Society Organizations-- we back the blue, and fire fighters, healthcare workers, journalists and all civilian branches of the people. -->
+                  <li class="gallery-card quest-card"><div class="quest-copy"><h3><span class="lang-en">Quest 3</span><span class="lang-ar hidden">مهمة 3</span></h3></div><div class="quest-media"><a href="united.html#quest-3"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/index/palestine.png" alt="Quest 3 preview" loading="lazy"></a></div></li>
+<!--water if life-->
+                  <li class="gallery-card quest-card"><div class="quest-copy"><h3><span class="lang-en">Quest 4</span><span class="lang-ar hidden">مهمة 4</span></h3></div><div class="quest-media"><a href="united.html#quest-4"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/index/waterislife.png" alt="Quest 4 preview" loading="lazy"></a></div></li>
+
+<!--Bisan and Gaza-->
+                  <li class="gallery-card quest-card"><div class="quest-copy"><h3><span class="lang-en">Quest 5</span><span class="lang-ar hidden">مهمة 5</span></h3></div><div class="quest-media"><a href="united.html#quest-5"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/united/ele1.jpg" alt="Quest 5 preview" loading="lazy"></a></div></li>
+<!--The 8th Front - digital war over minds and souls-->
+                  <li class="gallery-card quest-card"><div class="quest-copy"><h3><span class="lang-en">Quest 6</span><span class="lang-ar hidden">مهمة 6</span></h3></div><div class="quest-media"><a href="united.html#quest-6"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Leslie/leslie1.jpg" alt="Quest 6 preview" loading="lazy"></a></div></li>
+          
+ <!--I am being sooooo nice.-->                 
+                  <li class="gallery-card quest-card"><div class="quest-copy"><h3><span class="lang-en">Quest 7</span><span class="lang-ar hidden">مهمة 7</span></h3></div><div class="quest-media"><a href="united.html#quest-7"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/index/bop.jpeg" alt="Quest 7 preview" loading="lazy"></a></div></li>
+                </ul>
+                </div>
+                <div class="okh-message-copy">
+                <p>Let’s go to work. Now. All our ways. Keep moving.</p>
+                <p>Leslie, American Nobody999</p>
+                </div>
+              </div>
+              <div class="lang-ar hidden" dir="rtl">
+                <div class="okh-message-copy">
+                <p>الجميع، انظروا إلى جاكوب بيرجر هذا الأسبوع وسمّوه أحمقًا من قبلي. أخرجوا هاتفكم من بنطالكم يا جاكوب. شكرًا لكم. أمن الوطن يشكركم. لم يريدوا رؤيته.</p>
+                <p>حسنًا، لم يذهب ذلك كما كان متوقعًا لهم، أليس كذلك؟ كان أسبوعًا رائعًا، اصمتوا. يجب أن نستمر جميعنا في الارتفاع، حتى ونحن نتعرض للهجوم. اضحكوا عليهم. هل أصبحوا وحدهم في الدفاع عن الإبادة والإرهاب؟ لماذا يفعلون ذلك بعد كل هذا؟ ليس من أجل المال، لا أعتقد. الأمر أعمق من ذلك. يريدون تسمية هذا سياسيًا، لكنه ليس كذلك. إنه إبادة، تُروّج لها دولة بأكملها تعتقد أنها فوق الجميع، ويمكنها أن تذبح شعبًا كاملًا وفق رؤيتها المشوّهة للواقع. أعتقد أنهم ما زالوا يحاولون تجنّب محاسبتهم على مشاركتهم وكيف مكنوها من الوصول إلى هذا الحد. لا يستطيعون النظر إلى أنفسهم في المرآة، ونحن المرآة.</p>
+                <p>أيتها الإنسانية، في الـ 48 ساعة الماضية، تعرضت للضرب والاقتحام من حسابات مزيفة، وأرقام 8200 وهمية، ومؤثرين حصلوا على جزء من الـ 750 مليون دولار التي ضخها الاحتلال عبر شركات فاسدة. كل خيط. لدي أكثر من حسابات على كل المنصات من عدد عوالم ماين كرافت لدى ابني. تقريبًا كل منشور. لم أر هذا السوء من قبل، وإذا كنت قد تابعت هذا العام الماضي، فهم لا يرقصون معي. لا يجيبون على تعليقاتي. تقوم Mtea بمحو أي رد على تعليقاتي. هذا هو الوضع الآن. وهذا ما يثبت أنهم مزيفون. كسر الصمت حول الإبادة التي لم يستطيعوا الدفاع عنها، والآن يحل محله فقرات تقول: «كنا دائمًا مع فلسطين، لكن انظر ماذا فعلوا لإسرائيل». صحيح، إسرائيل الضحية منذ 1948. كيف يمكنك أن تنتقل من الهولوكوست إلى ارتكاب هولوكوست بنفسك لمدة 78 عامًا؟ لا أعرف، لا يستطيعون الإجابة عن ذلك. في الغالب إنها تشتيتات، لتبقيهم منشغلين و«مُحتلّين» بينما الحكومات الفاسدة تغمض عينيها ويستمر القتل.</p>
+                <p>انتهى النقاش يا أصدقائي. لا جدال. لم نعد نجعل فلسطين قضية دينية أو فلسفية. فلسطين أو إسرائيل. اختر. إما أن تكون في القارب، أو تقف بجانبهم في لاهاي وفي محكمة الرأي العام. انتهى الأمر هناك، اذهب. لا تنشغل بعواطفك وتمنح هؤلاء المهرجين تعليقًا واحدًا. اذهب وامنح الفلسطينيين وقتك وانتباهك. إنهم أكثر استحقاقًا لذلك. لا نُعترف بهم هذا الأسبوع، يا أحبة قلبي. في الواقع، حوالي 80% من هذا مزيف على أي حال. أعيدوا ضبط الخوارزمية لتُظهر فقط الدعاية الصهيونية. بالطبع هذا غير قانوني جدًا، بالنظر إلى أن هذه الشركات خاضعة لقوانين أمريكا. تعرف «سينتكوم» ما الذي يفعلونه. ونحن نعرف أنكم تعرفون أيضًا.</p>
+                <p>هل تعرف هذا الشعور عندما ترى علم فلسطين، هذا الوشاح أو دبوس البطيخ، أو يقول شخص ما \"فلسطين حرة\"؟ هل تنهمر دموعك من عينيك أيضًا؟ هل تبدأ في شفاء قلبك، حتى لو قليلاً؟ لأنها تعني أننا لسنا وحدنا، ولم يضيعوا بعد. إنه يملأك قليلاً. دعنا نفعل المزيد من ذلك هذا الأسبوع لبعضنا البعض. الجميع يقول فلسطين. بدأ هناك، وسينتهي هناك.</p>
+                <p>سأقولها بهذه الطريقة، ولا يهمني من يحبها، إن قيادة الاحتلال ستأتي لتتفاخر في الأمم المتحدة هذا الأسبوع. ستطلق النار على نفسها في قدمها في حمام الفندق وتكتب اسم إيران على تلك الرصاصة لتواصل الإبادة في سوريا وفلسطين ولبنان. لا علينا إلا التعامل معها لمدة 24 ساعة فقط. بسلام من المدرج إلى المدرج. حافظوا على روعكم، لأن أي شيء نقوله أو نفعله، تدفع فلسطين ثمنه.</p>
+                <p>نحن نفعل هذا معًا، وهذا ينجح. أيتها الإنسانية، هذا ينجح. ركّزوا على فلسطين. ركّزوا على أصدقائنا وعائلاتنا، امنحوا لهم الكلمة، هناك مساحة الآن. منذ وقت ليس ببعيد، لم نكن نستطيع قول فلسطين، كنا مضطرين للتحدث نيابةً عنهم. دعهم يتحدثون الآن. فلسطين قادرة تمامًا على التحدث باسمها. صدقوني، جرّبوا الخلاف مع أحدهم، ثم أخبروني كيف كانت النتيجة. ستشعرون بأنكم صغيرون جدًا، ولم يسبّبوا لك كلمة سيئة في وجهك.</p>
+                <p>راقب كلماتك، راقب تصرفاتك، وابقَ يقظًا في حماية سلامتك والتكامل الكامل للقضية. لماذا تعتقد أنني أتلقى النعال كل أسبوع؟ يجب أن أذهب للاعتذار إلى بعض \"الصحفيين\" معينين لأنني أبكيتهم في الزاوية.</p>
+                <p>لقد أسكتونا. استهدفونا. مضايقونا. ودعونا إرهابيين بينما يذبحون الأبرياء. يكسّرون قلوبنا، وكل يوم أكرر هذا من أجل فلسطين. أراك غدًا. لأنني لا أعرف من يحتاج إلى سماع هذا، لكننا لن نذهب إلى أي مكان، ولن نتخلى أبدًا عن فلسطين. تأكّدوا هذا الأسبوع، أيها الأحباب، عندما نضع شعاراتنا كما يسمّونها في وجوههم، أن يلتقطوها بشكل صحيح. «فلسطين حرة» و«حرة» إضافية للتأكيد. إذا كانت مجرد هتافات سخيفة وشعارات، لما احتجنا إلى ذكاء اصطناعي لصنع شعارات لمواجهة الشعارات، أليس كذلك؟</p>
+                <p>نحن نستمر. معًا. اذهب إلى العمل.</p>
+                </div>
+                <div class="okh-side-quests-copy">
+                <h3 class="side-quests-heading"><span class="lang-en">Leslie's Side Quests</span><span class="lang-ar hidden">مهام ليزلي الجانبية</span></h3>
+                <p class="side-quests-intro"><span class="lang-en">Pick one. Click it. Enough said. I’ll add more soon. I promise you’ll find something you can help with.</span><span class="lang-ar hidden">اختر واحدة. اضغط عليها. هذا كل شيء. سأضيف المزيد قريبًا. أعدك أنك ستجد شيئًا يمكنك المساعدة فيه.</span></p>
+                </div>
+                <div class="okh-side-quests-list">
+                <ul class="side-quests-gallery scrollable-gallery">
+                  <li class="gallery-card quest-card"><div class="quest-copy"><h3>مهمة 1</h3><p><strong>التذكرة الذهبية إلى فلسطين</strong> هي نقطة البداية العملية للتحرك الفوري. استخدموا هذه الصفحة للوصول إلى تحديثات موثوقة وموارد قابلة للمشاركة وأدوات تنظيم يمكن نشرها بسرعة عبر شبكاتكم. الهدف هو تحويل التعاطف إلى دعم ملموس من خلال تزويد الناس بمسار واضح يبدأون منه ويتعلمون عبره ثم يتحركون معًا. إذا سأل أحدهم: ماذا نفعل الآن؟ فليكن هذا أول رابط ترسلونه. احفظوا الرابط في مكان واضح لتعودوا إليه عند أي تحديث عاجل. شاركوه يوميًا مع أشخاص جدد لزيادة دائرة المشاركة. اعتبروه لوحة عمل مستمرة لا منشورًا مؤقتًا.</p></div><div class="quest-media"><a href="ticket.html"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0021.jpg" alt="معاينة التذكرة الذهبية" loading="lazy"></a></div></li>
+                  <li class="gallery-card quest-card"><div class="quest-copy"><h3>مهمة 2</h3><p>علينا تسليط الضوء على الأسرى والمحتجزين الفلسطينيين. أين الدكتور سيفيا؟ وأين عاملو الرعاية الصحية لدينا؟ لا تهم، لا محاكمات، فقط إساءة واحتجاز في معسكرات موت السجون. يجب السماح للهلال الأحمر بالدخول. وإذا كان السجناء جميعًا يكذبون، فاسمحوا لمراقبين مستقلين بالدخول ودحض هذه الادعاءات. كذلك، توقفوا عن نشر الإساءة والتفاخر بها على وسائل التواصل العامة. لا يمكن الاستمرار في نشر جرائم حرب ثم نفيها والتساؤل من أين يأتي الرفض. واصلوا نشر القوائم الموثقة للأسماء حتى لا تختفي القضايا من الذاكرة العامة. راسلوا المنظمات المعنية باستمرار وبأسلوب مهني للمطالبة بتحديثات علنية. احتفظوا بسجل زمني للتصريحات والإجراءات لدعم مسار المحاسبة.</p></div><div class="quest-media"><a href="https://redribbonscampaign.com" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0021.jpg" alt="معاينة حملة الشرائط الحمراء" loading="lazy"></a></div></li>
+                  <li class="gallery-card quest-card"><div class="quest-copy"><h3>مهمة 3</h3><p>علينا التعريف بالمجموعات المدنية والمنظمات الإنسانية الفلسطينية العاملة على الأرض في فلسطين ودعمها. تؤدي منظمات المجتمع المدني دورًا حاسمًا في تقديم الخدمات الأساسية والدفاع عن حقوق الفلسطينيين. إنهم ينتشلون رفات أحبّتنا بأيديهم، بينما يحاول الاحتلال إزالة 50 مليون طن من الركام إلى موقع سري للتغطية على جرائم الحرب. رفات الفلسطينيين موجودة في ذلك الركام. ركّزوا على الجهات التي تنشر احتياجات واضحة وتقارير ميدانية منتظمة. أعطوا الأولوية لدعم فرق الإسعاف والإنقاذ والمطابخ المجتمعية. كرروا أسماء هذه الجهات وأعمالها حتى تبقى مرئية ومحمية.</p></div><div class="quest-media"><a href="https://www.anera.org" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0021.jpg" alt="معاينة مهمة 3" loading="lazy"></a></div></li>
+                  <li class="gallery-card quest-card"><div class="quest-copy"><h3>مهمة 4</h3><p>تحتاج العائلات إلى مياه نظيفة بشكل عاجل، وإلى غذاء منتظم، وأدوية طوارئ، وخدمات صحية أساسية، إضافة إلى استمرار التعليم للأطفال رغم ظروف الحرب. كما تحتاج إلى ضغط دولي مستمر لوقف استهداف المدنيين والبنية التحتية المدنية. ادعموا الجهات التي تنشر تقارير واضحة عن مسارات المساعدات وشركائها الميدانيين حتى نضمن أن الدعم يصل فعلًا إلى الناس. كل تبرع موثّق، وكل نشر مسؤول، وكل رسالة ضغط مدني تساعد في سد فجوة النجاة على الأرض. اطلبوا من الجهات المنفذة نشر بيانات دورية عن وتيرة التوزيع ومناطق الوصول. شاركوا إرشادات السلامة المتعلقة بالمياه والتخزين والصحة العامة كلما صدرت من مصادر موثوقة. وطالبوا بخطط إصلاح طويلة الأمد للبنية الأساسية، لا استجابات مؤقتة فقط.</p></div><div class="quest-media"><a href="https://www.unrwa.org" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0021.jpg" alt="معاينة مهمة 4" loading="lazy"></a></div></li>
+                  <li class="gallery-card quest-card"><div class="quest-copy"><h3>مهمة 5</h3><p>تحتاج بيسان وغزة إلى حضور إعلامي دائم لأن الاستهداف يطال تفاصيل الحياة اليومية، من الملاجئ والمستشفيات إلى التجمعات المدنية التي يفترض أن تكون أكثر أمانًا. ارفعوا شهادات الناس، وادعموا الصحفيين الفلسطينيين الموثوقين، واستمروا في التوثيق لحظة بلحظة حتى لا تضيع الأدلة وسط التضليل والإنكار. هذه المهمة تعني رفض الصمت: إبقاء الانتباه حيًا، ومضاعفة الضغط على المؤسسات، وحماية الحقيقة من الطمس. ابقوا متيقظين، منظمين، ومستندين دائمًا إلى مصادر موثوقة. احفظوا الروابط مع التواريخ لتسهيل إعادة النشر بدقة عند الحاجة. صححوا المعلومات الخاطئة بسرعة وهدوء مع إرفاق الأدلة الموثقة. اربطوا كل تحديث بنداء عمل واضح حتى يبقى الجمهور الدولي متفاعلًا.</p></div><div class="quest-media"><a href="https://www.instagram.com/wizard_bisan1/" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0021.jpg" alt="معاينة مهمة 5" loading="lazy"></a></div></li>
+<!--الجبهة الثامعة - حرب رقمية على العقول والأرواح-->
+                  <li class="gallery-card quest-card"><div class="quest-copy"><h3>مهمة 9</h3><p>الجبهة الثامنة هي أحدث ساحات المعركة: حرب رقمية على العقول والأرواح تُخاض عبر كل منصة، وكل قسم تعليقات، وكل خوارزمية. تتنافس الصور والشهادات والحقيقة يوميًا ضد التضليل والقمع والمحتوى المختفي، وكل مشاركة ولقطة شاشة وملف محفوظ هو فعل مقاومة. تعرفوا على كيفية حفظ ما يهم، وحماية الأصوات المعرضة للمحو، وفهم المنصات التي تشكل ما يُسمح للعالم برؤيته. هذه ليست معركة تُخاض بالسلاح؛ بل تُخاض بالانتباه والذاكرة ورفض غض الطرف. زوروا الجبهة الثامنة لرؤية الأدوات والتكتيكات والحقائق التي تُبقي هذه المعركة حية.</p></div><div class="quest-media"><a href="leslie.html#eighth-front-section"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Leslie/leslie1.jpg" alt="معاينة مهمة 9" loading="lazy"></a></div></li>
+                  <li class="gallery-card quest-card"><div class="quest-copy"><h3>مهمة 6</h3><p>تحتاج السلطة الفلسطينية إلى الدعم. فقد قطع الاحتلال الإسرائيلي عنها مصادر التمويل، مما جعلها غير قادرة على تقديم الخدمات الأساسية، في الوقت الذي يستولي فيه الاحتلال على الموارد والمساعدات الإنسانية. ويواجه السكان التجويع والعزلة عن العالم، ولذلك يجب أن نقدم لهم الدعم. المطلوب هو دعم مؤسسي يحافظ على استمرارية الخدمات اليومية للناس. تابعوا التقارير الرسمية لمعرفة الأولويات العاجلة في الصحة والتعليم والإغاثة. اضغطوا من أجل وصول الموارد من دون عرقلة وبشفافية كاملة.</p></div><div class="quest-media"><a href="https://www.palestinecabinet.gov.ps/portal" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0021.jpg" alt="معاينة مهمة 6" loading="lazy"></a></div></li>
+                  <li class="gallery-card quest-card"><div class="quest-copy"><h3>مهمة 7</h3><p><strong>يجب على جميع الفرق الميدانية التوجّه إلى:</strong> <a href="https://www.Globalsumudflotilla.org">اضغط هنا --&gt; Globalsumudflotilla.org</a> إنهم لم يبحروا بعد. وكلما زاد الوعي والدعم الذي نقدمه لهم، عادوا إلى البحر أسرع. تذكّروا: نبقى ثابتين، نبقى مسالمين، ونحب بعضنا بعضًا حتى عندما نرغب في دفع بعضنا خارج القوارب. إذا كان عليّ أن أتحمّلكم، فعليكم أن تتحمّلوني أيضًا. انطلقوا إلى العمل. وكونوا لطفاء. كما أنهم بحاجة إلى نشطاء على الأرض في الضفة الغربية، والمعلومات موجودة على الموقع. وللأسف أنا شخصيًا عالقة في سانتا مونيكا، كاليفورنيا. لسبب ما قد لا يوافق الاحتلال على جواز سفري؛ أظنهم لا يحبونني كثيرًا. عادةً ما يضطر العاملون الإنسانيون إلى تحمّل التكلفة بأنفسهم، ولهذا يجمعون التبرعات، لكن لا تدعوا ذلك يثنيكم عن الذهاب. تواصلوا مع أساطيل الإغاثة. نعم، لقد دفعوا من جيوبهم لتلك الرحلة البحرية ثم تعرّضوا للاختطاف والتعذيب. استعدناهم، لكن ما يزال هناك أكثر من 10 آلاف فلسطيني يتعرّضون لما هو أسوأ يوميًا في السجون. شاركوا معلومات التسجيل والجدولة مع فرق موثوقة في مناطقكم. ساعدوا المتطوعين في تجهيز الدعم اللوجستي قبل التحرك بدل الانتظار لآخر لحظة. كل فريق منظم ومُحاط بمعلومات دقيقة يختصر وقتًا ثمينًا على الأرض.</p></div><div class="quest-media"><a href="https://www.Globalsumudflotilla.org" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0021.jpg" alt="معاينة مهمة 7" loading="lazy"></a></div></li>
+                  <li class="gallery-card quest-card"><div class="quest-copy"><h3>مهمة 8</h3><p>أما «مجلس الاحتيال»، فسيكون هذا محور تركيز MPGA. من غير القانوني استخدام الرئاسة لتشكيل مجلس حكم دائم فوق دولة ذات سيادة أجنبية. هذا المجلس بلا شرعية لدى الناس، أمريكيين كانوا أم فلسطينيين، وقد أثبتت أفعاله أنه امتداد لاستمرار اضطهاد الشعب الفلسطيني والتطهير العرقي بحقه. كما أثبت أنه لا يملك قدرة حقيقية على مساعدة الفلسطينيين، وأن رفض الحكومة الأمريكية الاعتراف بخطة إدارة ترامب المودعة في أرشيف الكونغرس للاعتراف بدولة فلسطين يكشف مدى نفاق القيادة الأمريكية الحالية بلا حدود. ووفقًا لمجلس الاحتيال، يُحرَم الفلسطينيون من حقهم في المطالبة بالدولة. أنا مواطنة أمريكية ولست مرتبطة بالتكنوقراط، وأطالب الولايات المتحدة بالاعتراف بفلسطين. الصين اعترفت بفلسطين منذ 1988، ولم تُنشئ مجلسًا كهذا. اطلبوا من مختصين قانونيين وأكاديميين تقديم قراءات مستقلة ومعلنة لهذه السياسات. قارنوا الوعود الرسمية بالنتائج الفعلية على الأرض واحتفظوا بهذا التقييم متاحًا للجمهور. عندما تُنظم الحقائق بوضوح، تصبح المحاسبة أقرب وأكثر تأثيرًا.</p></div><div class="quest-media"><a href="https://www.congress.gov" target="_blank" rel="noopener noreferrer"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0021.jpg" alt="معاينة مهمة 8" loading="lazy"></a></div></li>
+                </ul>
+                </div>
+                <div class="okh-message-copy">
+                <p>سأكون على تواصل معكم قريبًا، والآن بعد أن بدأنا أخيرًا المضي قدمًا دون عوائق، سيواصل هذا الموقع تقديم التحديثات والدعم لمهمتنا. كنت أفضّل أن أقضي يومي كله في كتابة هذا الكود وتصميم هذا الموقع وإنشائه، لكنني بدلًا من ذلك أقضي الأسبوع كله وسط الدعاية السامة والفائض الهائل من المعلومات على الإنترنت. لهذا أشارك حسابات التواصل. هناك أكثر من 11,000 منشور يوضح لكم كيف تتحركون، مع أفكار ومصادر وحسابات فلسطينية للمتابعة وصياغات يمكن استخدامها. خذوا ما تحتاجونه، لأن كل الطرق تقود إلى فلسطين. كل محبتي لكم، حتى لو اختلفت معكم أو لم أحب بعضكم. أنظر إليكم يا إعلام الغرب.</p>
+                <p>ليزلي، أمريكان نوبودي999</p>
+                </div>
+              </div>
+                </div>
+
+                <div class="media-grid">
+                    <figure class="ticket-preview-figure">
+                        <a href="ticket.html"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/legal/0021.jpg" alt="Golden ticket preview" loading="lazy"></a>
+                        <figcaption>
+                            <span class="lang-en"><strong>Click me</strong><br>Let’s go!</span>
+                            <span class="lang-ar hidden" dir="rtl"><strong>اضغط هنا</strong><br>هيا بنا!</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div class="video-gallery-section section-bottom-video">
+              <h4 class="gallery-title">
+                <span class="lang-en">Watch</span>
+                <span class="lang-ar hidden">شاهد</span>
+              </h4>
+              <div class="video-gallery">
+                <div class="video-container">
+                  <iframe
+                    src="https://www.youtube.com/embed/1G4isv_Fylg"
+                    title="OK Humanity Video"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+            </div>
+    </section>
+
+<!-- Section 3: OK America -->
+
+    <section class="section ok-america" id="ok-america">
+            <h3 class="section-title">
+                <span class="lang-en">OK, America</span>
+                <span class="lang-ar">حسنًا، يا أمريكا</span>
+            </h3>
+            <div class="content-grid">
+                <div class="text-content">
+                  <div class="lang-en">
+                <p>Good evening, America,</p>
+                <p>We will not be sending the Zionist Terrorist occupation 40,000 more bombs. If they have 2.2 billion to send to Israel, where are our $5000 checks? How come that has to go through congress, but Trump can just write Benjamin a check for 2.2 billion, send him our military equipment, make deals with weapons companies for more, and sign our name to it?<br>
+                Also, aren't our stockpiles depleted. He had the whole military leaders take lie detector tests to find who leaked that information, but I don't think he understands the job. Completely makes sense now. Pentagon reports to congress for money, and you can lie really good to them Couch Monkey Pete, at a hearing, but the Excel sheets don't match your claims and the crimes don't match your Israel intel.<br>
+                Who the hell is relying on Israeli intel after 120 children lost their lives in Iran? Also, stop accusing everyone of leaking. Israeli officials post everything you’re doing, and Mossad’s cyber security is subpar . They recently hacked a ICC procesuctors cell phone to get his contacts, but they left all of their contacts instead. Sam Altman and Elon, and a bunch of others had to change their phone numbers. It was great.<br>
+               Stop using social media to hide your plans from other governments and the people. That’s illegal, by the way, American politicians for you to be in private DMS with Israeli and Mossad officials selling them American dissent.</p>
+                <p>Are you paying attention now?</p>
+                <p>We went to war with Iran over weapons of mass destruction, I feel like they just grabbed Bush’s binder and wrote Trump’s name on in Hebrew. Now, we find out that the Energy secretary is trying to sell Iran nuclear energy. Isn't that interesting. Especially when Blackrock, Trump and Benjamin all set up a stock option for nuclear energy back in may after he disrupted global oil markets, I believe they opened it on June 16th. Go check me on that. Go look yourselves. I got the receipts for that.</p>
+                <p>This is not left verse right my Americans. The left is trying to cut us payouts too, we don't want their blood money. Its only going to fill up the tank once, buy a few days grocieries, and half the light bill. My soul and my consious worth more than that.<br>
+                We want them to do their jobs so we don't end up in mess like this and paying for a genocide. It’s not about money, and they don't seem to understand that. If you stand with Israel, you get no vote, and we don't care if you cured cancer while you stand with them. You support a foreign power policy over our constitutional rights, you get no office. You want to support a genocidal occupation, go live there, because the people in Israel are sick of their government too, IDF and Isrealis are sick of being forced to serve in Isreal citizen army for genocide. If you don't join the IDF at 18, you go to Isreali prison for year. Draft isn't funny anymore is it? Sound fimilar?<br>
+                 You think ours is corrupt about stealing people’s money. The Jewish population is livid because Zionists keep painting targets on their backs with that antisemitism card and they are sick of Palestinian slaughter in their name, when it isn't even about religion. Zionests hide behind the star od David, and  Zionists are not Jews.<br>
+                 A whole lot of the terrorists right now in west bank are Christian Zionists from Texas, California, and New york. The terrorists are given free housing, medical, food, and money and free trips to Israel to do nothing more than terrorize the Palestinians. Your pastors and your church leaders are taking the bribes and the trips to Israel for the "roof" funds. Does Jesus like genocide? Did he tell you to hate the Muslims that they have convinced you are hiding under your bed? I looked, I couldn't find Hamas under my couch.</p>
+                <p>Opps. I said the no no word. Hamas. Hamas. Hamas. I'm not supposed to say that, just like I was not supposed to say Palestine.</p>
+                <p>A year ago, America, I went after Hamas. When the Global Sumud Flotilla were attacked by drones, I read a headline without research. "Hamas attacks Humanitarian Aid", Israeli media source of course. Fox News was running that propaganda commercial, where we had to step up and save the Palestinians, Hamas was chopping their heads off, throwing gays off the roof. Donate to this campaign of course at the bottom. They ran that commercial on the west coast for months, sometimes back to back, followed by the save the Jews commercial, right up until Sarah was shot in the face in DC, and there was a shooting in Texas. So, I was going to be a good American and I was going to fight Hamas for Palestine.</p>
+                <p>I was looking for one man. I didn't know his face or his real name. One thing about the Palestians, when they want to keep something private and secret, your not going to ever, ever, ever going to find it. I listened to his speeches, and I thought to be bold enough, to reach out and speak with him. I thought if we just had some adults in the room, we could just talk, figure it out. No more blood. No more death.<br>
+                The fake ceasefire was announced on October 10th. My plan, my whole thought process, it seemed to working. Hamas fulfilled every single line of that ceasefire. I followed them and day after day, they did the right things, while my own leadership hid behind exuses and lies. I waited for the Hamas to act as terroists, day after day, to mess up once, so I didn't have to be so wrong.<br>
+                 They returned hostages, while thousands of Palestinian hostages are still being held without crime, they even found bodies under the rubble that had been there for years, while their own people still remain under in silent concrete tombs. Israel continues to slaughter them every day. I just got the images of the bodies of the people they killed 2 hours ago. Over 75,000 violations of that ceasefire, and not one from Hamas.<br>
+                 I was chasing a ghost. I had heard the rumors, and I dived in Palestinians politics, their comments, to try to understand where they were at, so we could help them rebuild. There was one specific clip, that they flooded my feed with for months. There are no words to describe it, now that I know who it was. The occupation has this little game it plays in the aglorithm with people. They find Who you love, what means the most you, and then they kill it livestream,and feed it to you, so your heart breaks day after day. I dismissed it at the time. I never knew what his face looked like. they thought I was Hamas, they still do. They still feed me intellegence, to know things, and never be able to stop them. Their cruelty has no limits.<br>
+                In december, I stepped out of Palestinian politics, and I stopped chasing Hamas. And you can connect those dots as to why.<br>
+                 Do not say Hamas, as if an indigenous population defending their homeland from foreign occupation and genocide is something any of us wouldn't do if we were them. 78 years. You cannot erase 78 years of crimes. Do not let them say October 7th, when the current occupation government had a month of knowledge, and decided to take a nap. That was Hitler’s excuse, Americans wouldn't have taken the beaches of Normandy if only the Nazis had woke him up.</p>
+                <p>Israel cannot have America. I will continue to fight their corruption in our governenment and their occupation, and their media distractions, their false flags, and their fearmongering. Does that make me a terrorists too?</p>
+                <p>America, when our government fails us, and it does daily, in every major event we have, they somehow manage to mess it up. When they do, we are the ones here for each other. We the people. You have to read the rest of the document.</p>
+                <p>Come with me to Palestine, my fellow Americans, I need you. I need you to help me please. Stand with me. Show the world that while our leaders are lining their pockets, and they are building bombs and technology to control us, we are the ones who will remain when they are gone. Let’s show the world who we really are. Lend our arms to Palestine. There is no denying the genocide, Americans, we have to acknowledge it, accept our part in it, and we have to take the fences down around the concentration camps. We have to stop the train before the Israel government slaughters over 10,000 Palestinian hostages they have rounded up. We did it once before remember? We ended a holocaust before, we can do it again.</p>
+                <p>Also, one more thing, kiss kiss. I don't know who needs to hear that this week. Take his ass to the hotel and stay there till it’s time for his turn to lie, then get his ass back on the plane. I'll make you a playlist for the ride back. Occupation and Friends are so not welcome here. They are not welcome any time in the future either. I don't care what their minions are saying.</p>
+              </div>
+              <div class="lang-ar hidden" dir="rtl">
+                <p>مساء الخير يا أمريكا،</p>
+                <p>لن نرسل للاحتلال الصهيوني الإرهابي 40 ألف قنبلة أخرى. إذا كان لديهم 2.2 مليار دولار لإرسالها إلى إسرائيل، أين شيكاتنا بقيمة 5000 دولار؟ وكيف يمكن أن يمر ذلك عبر الكونغرس، بينما يستطيع ترامب كتابة شيك لبنيامين بقيمة 2.2 مليار دولار فقط، وإرسال معداتنا العسكرية، وإبرام صفقات مع شركات الأسلحة للمزيد، وكتابة اسمنا عليها؟</p>
+                <p>أليس مخزوننا قد استنزف؟ كان لديه كل قادة الجيش يخضعون لاختبارات كشف الكذب لاكتشاف من تسرب تلك المعلومات، لكني لا أعتقد أنه يفهم الوظيفة. الآن كل شيء منطقي. التقارير العسكرية تذهب إلى الكونغرس من أجل الأموال، ويمكنك الكذب جيدًا عليهم في جلسة الاستماع، لكن جداول Excel لا تتوافق مع ادعاءاتك، ولا تتطابق الجرائم مع استخباراتك الإسرائيلية.</p>
+                <p>من الذي يثق بالاستخبارات الإسرائيلية بعد مقتل 120 طفلاً في إيران؟ وأيضًا، توقفوا عن اتهام الجميع بالتسريب. المسؤولون الإسرائيليون ينشرون كل ما تفعله، وأمن المعلومات في الموساد ضعيف. كانوا قد اختطفوا هاتف خلية أحد قضاة المحكمة الجنائية الدولية للحصول على جهات الاتصال، لكنهم تركوا كل اتصالاتهم بدلًا من ذلك. كان على سام التمان وإيلون ومجموعة أخرى تغيير أرقام هواتفهم. كان ذلك رائعًا.</p>
+                <p>توقفوا عن استخدام وسائل التواصل الاجتماعي لإخفاء خططكم عن الحكومات الأخرى وعن الشعب. هذا غير قانوني، بالمناسبة، أيها السياسيون الأمريكيون، أن تكونوا في الرسائل الخاصة مع مسؤولين إسرائيليين وموساد يبيعونهم تباين الأمريكيين.</p>
+                <p>هل أنت منتبه الآن؟</p>
+                <p>دخلنا في حرب مع إيران بسبب أسلحة الدمار الشامل، وأشعر وكأنهم فقط أخذوا مجلد بوش وكتبوا اسم ترامب عليه بالعبرية. والآن نكتشف أن وزير الطاقة يحاول بيع الطاقة النووية لإيران. أليس ذلك مثيرًا للاهتمام، خاصة عندما أُنشئت خيارات أسهم للطاقة النووية من قبل بلاك روك وترامب وبنيامين في مايو بعد أن أخلوا بأسواق النفط العالمية، وأعتقد أنهم فتحوا الحساب في 16 يونيو. اذهبوا وتحققوا من ذلك. انظروا بأنفسكم. لدي المستندات.</p>
+                <p>هذه ليست قضية يسار/يمين يا أمريكيون. اليسار يحاول أيضًا تقليص دفعاتنا، ونحن لا نريد أموالهم الدموية. لن يملأ ذلك الخزان إلا مرة واحدة، ويشتري بضعة أيام من البقالة، ونصف فاتورة الكهرباء. روحي وعقلي أغلى من ذلك.</p>
+                <p>نريد منهم أن يقوموا بعملهم حتى لا ينتهي بنا الأمر إلى فوضى كهذه وندفع ثمن إبادة جماعية. الأمر ليس يتعلق بالمال، ولا يبدو أنهم يفهمون ذلك. إذا وقفت مع إسرائيل، فلا صوت لك، ولا يهم إذا شفيت السرطان أثناء وقوفك إلى جانبهم. إذا كنت تدعم سياسة قوة أجنبية على حقوقنا الدستورية، فلن تحصل على منصب. إذا كنت تريد دعم احتلال إبادي، فاذهب وعيش هناك، لأن الشعب في إسرائيل سئم حكومتهم أيضًا، والقوات الإسرائيلية والإسرائيليون سئمون من فرض الخدمة في جيش المواطنين الإسرائيلي للإبادة. إذا لم تنضم إلى جيش الاحتلال في سن 18، فستذهب إلى السجن الإسرائيلي لمدة عام. التجنيد لم يعد مضحكًا، أليس كذلك؟ إنه يبدو مألوفًا؟</p>
+                <p>تعتقد أن فسادنا يتعلق بسرقة أموال الناس. السكان اليهود غاضبون لأن الصهاينة يواصلون رسم أهداف على ظهورهم ببطاقة معاداة السامية، وهم سئموا من قتل الفلسطينيين باسمهم، عندما لا يتعلق الأمر بالدين في الواقع. يختبئون خلف نجمة داود، والصهاينة ليسوا يهود.</p>
+                <p>كثير من الإرهابيين الآن في الضفة الغربية هم صهاينة مسيحيون من تكساس وكاليفورنيا ونيويورك. يُمنح الإرهابيون سكنًا وطعامًا وطبابة ومساعدات ومبالغ، وجولات مجانية إلى إسرائيل ليفعلوا أكثر من مجرد إرهاب الفلسطينيين. قساوسة وأئمة كنائسكم يأخذون الرشاوى والرحلات إلى إسرائيل من أجل "أموال السقف". هل يحب يسوع الإبادة؟ هل قال لك أن تكره المسلمين الذين أقنعوك أنهم مختبئون تحت سريرك؟ نظرت، لم أجد حماس تحت الأريكة.</p>
+                <p>أوه. قلت الكلمة المحظورة. حماس. حماس. حماس. لا يجب أن أقولها، تمامًا كما لم يكن مسموحًا لي أن أقول فلسطين.</p>
+                <p>قبل عام، يا أمريكا، كنت ألاحق حماس. عندما هاجمت أسطول السلام العالمي طائرات مسيرة، قرأت عنوانًا دون بحث. "حماس تهاجم المساعدات الإنسانية"، وهي مصدر إسرائيلي بالطبع. كانت فوكس نيوز تعرض هذا الإعلان الدعاية، حيث كنا يجب أن ننهض وننقذ الفلسطينيين، وكانت حماس تقطع رؤوسهم، وترمي المثليين من الأسطح. تبرعوا للحملة بالطبع في الأسفل. كانت هذه الإعلانات تبث في الساحل الغربي لأشهر، أحيانًا متتابعات، تليها دعائية إنقاذ اليهود، حتى أطلقت النار على سارة في وجهها في واشنطن، وكان هناك إطلاق نار في تكساس. لذلك كنت سأكون أمريكيًا جيدًا وسأحارب حماس من أجل فلسطين.</p>
+                <p>كنت أبحث عن رجل واحد. لم أكن أعرف وجهه أو اسمه الحقيقي. هناك شيء واحد عن الفلسطينيين: عندما يريدون إبقاء شيء خاصًا وسريًا، فلن تجدوه أبدًا. استمعت إلى خطبه، واعتقدت أنه إذا كان لدينا بعض البالغين في الغرفة، يمكننا التحدث وفهم الأمور. لا مزيد من الدماء. لا مزيد من الموت.</p>
+                <p>أعلن وقف إطلاق النار الوهمي في 10 أكتوبر. خطتي، كل تفكيري، بدا أنه يعمل. التزمت حماس بكل سطر من وقف إطلاق النار. تابعتها يومًا بعد يوم، وارتكبت الأمور الصحيحة، بينما خفيت قيادتنا وراء الأعذار والكذب. انتظرت أن ترتكب حماس خطأً إرهابيًا يومًا بعد يوم، لتفشل مرة واحدة، لكي لا أكون مخطئًا إلى هذا الحد.</p>
+                <p>عادوا بالرهائن، بينما ما زال آلاف الفلسطينيين محتجزين بدون تهمة، حتى تم اكتشاف جثث تحت الأنقاض كانت هناك لسنوات، بينما لا يزال شعبهم محبوسًا في قبور خرسانية صامتة. تواصل إسرائيل قتلهم يوميًا. حصلت للتو على صور جثث الأشخاص الذين قتلهم قبل ساعتين. أكثر من 75 ألف انتهاك لوقف إطلاق النار، ولم يحدث واحد من حماس.</p>
+                <p>كنت ألاحق شبحًا. سمعت الشائعات، وغرقت في السياسة الفلسطينية، في تعليقاتهم، لمحاولة فهم ما يجري، حتى نتمكن من مساعدتهم في إعادة البناء. كان هناك مقطع معين غمرني به الخوارزمية لعدة أشهر. لا توجد كلمات لوصفه الآن بعد أن عرفت من هو. يمتلك الاحتلال هذه اللعبة الصغيرة في الخوارزمية: يجد من تحب، ما الذي يعني لك أكثر، ثم يقتله مباشرةً ويعرضه لك، بحيث تنكسر قلبك يومًا بعد يوم. تجاهلت ذلك في ذلك الوقت. لم أكن أعرف وجهه. كانوا يظنون أنني حماس، وما زالوا يظنون ذلك. ما زالوا يمدونني بالذكاء الاستخباراتي لمعرفة أشياء، ولا يستطيعوا إيقافها. قسوتهم لا حدود لها.</p>
+                <p>في ديسمبر، خرجت من السياسة الفلسطينية، وتوقفت عن مطاردة حماس. ويمكنكم ربط هذه النقاط لماذا.</p>
+                <p>لا تقولوا حماس، كما لو أن السكان الأصليين يدافعون عن وطنهم ضد احتلال أجنبي وإبادة ليس شيئًا سنفعله لو كنا مكانهم. 78 عامًا. لا يمكن محو 78 عامًا من الجرائم. لا تسمحوا لهم أن يقولوا 7 أكتوبر، عندما كانت حكومة الاحتلال الحالية لديها شهر من المعرفة، وقررت أن تأخذ قيلولة. هذا كان عذر هتلر، ولم يكن الأمريكيون ليتخذوا شواطئ نورماندي لو أنه فقط أيقظ النازيين.</p>
+                <p>لا يمكن لإسرائيل أن تمتلك أمريكا. سأستمر في محاربة فسادهم في حكومتنا، واحتلالهم، وتشتيتهم الإعلامية، وأعلامهم الكاذبة، وخوفهم. هل هذا يجعلني أيضًا إرهابيًا؟</p>
+                <p>يا أمريكا، عندما تفشل حكومتنا في حقنا، وهذا يحدث يوميًا، في كل حدث كبير، فإنها تدير الأمور بشكل سيء. وعندما يحدث ذلك، نحن هنا لبعضنا البعض. نحن الشعب. عليك أن تقرأ بقية الوثيقة.</p>
+                <p>هيا معي إلى فلسطين، أيها الأمريكيون الأعزاء، أحتاجكم. أحتاجكم لمساعدتي من فضلكم. قفوا معي. أظهروا للعالم أنه بينما يملأ قادتنا جيوبهم، ويشيدون القنابل والتكنولوجيا للتحكم بنا، نحن من سيبقى عندما يرحلون. لنظهر للعالم من نحن في الحقيقة. دعونا نمد أذرعنا لفلسطين. لا يوجد إنكار للإبادة، أيها الأمريكيون، علينا الاعتراف بها، وقبول جزءنا فيها، ويجب أن نزيل الأسوار حول معسكرات الاعتقال. علينا إيقاف القطار قبل أن تقتل حكومة إسرائيل أكثر من 10 آلاف رهينة فلسطينيين قاموا باحتجازهم. فعلنا ذلك من قبل، تذكروا؟ أنهينا الهولوكوست من قبل، ويمكننا أن نفعل ذلك مرة أخرى.</p>
+                <p>أيضًا، شيء آخر، قبلة قبلة. لا أعرف من يحتاج إلى سماع هذا هذا الأسبوع. خذوه إلى الفندق وابقوا هناك حتى يحين وقت كذبه، ثم ارجعوه إلى الطائرة. سأصنع لك قائمة تشغيل للرحلة العودة. الاحتلال وأصدقاؤه غير مرحب بهم هنا. ولا مرحب بهم في أي وقت في المستقبل أيضًا. لا يهمني ما يقوله خدمهم.</p>
+            </div>
+          </div>
+        </div>
+            <div class="video-gallery-section section-bottom-video">
+              <h4 class="gallery-title">
+                <span class="lang-en">Watch</span>
+                <span class="lang-ar hidden">شاهد</span>
+              </h4>
+              <div class="video-gallery">
+                <div class="video-container">
+                  <iframe
+                    src="https://www.youtube.com/embed/T2bcUxUOUQg"
+                    title="OK America Video"
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+            </div>
+    </section>
+
+<!-- Section 4: Featured Hero -->
+
+    <section class="section feature-hero" id="featured-hero">
+            <h3 class="section-title">
+              <span class="lang-en">Featured Hero</span>
+              <span class="lang-ar hidden">البطل المميز</span>
+            </h3>
+            
+            <div class="hero-grid">
+                <div class="hero-media">
+                    <figure>
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/617.jpg" alt="Andrey X peace in cuffs" class="div-img" loading="lazy">
+                      <figcaption>
+                        <span class="lang-en">Featured Hero Image</span>
+                        <span class="lang-ar hidden">صورة البطل المميز</span>
+                      </figcaption>
+                    </figure>
+                </div>
+
+                <div class="hero-bio andrey-feature">
+                    <button class="andrey-feature-trigger" id="andrey-feature-trigger" type="button" aria-haspopup="dialog" aria-controls="andrey-modal">
+                      <img
+                        src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/index/shots.png"
+                        alt="Open Andrey X featured videos"
+                        class="interactive-wiggle"
+                        loading="lazy">
+                    </button>
+                </div>
+
+                <div class="video-gallery-section section-bottom-video">
+                  <h3 class="gallery-title">
+                    <span class="lang-en">Shalom to those who Break the Silence. Take our hand, we don't let go. We do this together.</span>
+                    <span class="lang-ar hidden">السلام لمن يكسرون الصمت. خذوا أيدينا، نحن لا نتركها. نفعل هذا معًا.</span>
+                  </h3>
+                  <div class="video-gallery">
+                    <div class="video-container">
+                      <iframe
+                        src="https://www.youtube.com/embed/hBwcUAK9DjA"
+                        title="Featured Hero Video"
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                      </iframe>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="hero-gallery-block">
+                  <h3>
+                    <span class="lang-en">Congratulations, You're Famous!</span>
+                    <span class="lang-ar hidden">مبروك، أنت مشهور!</span>
+                  </h3>
+                  <div class="scrollable-gallery">
+                     <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/30006.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                     <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/291310.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                     <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/297920.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A34.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A35.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A36.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A37.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A38.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A39.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A9.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A10.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A0.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A1.jpg" alt="Featured hero gallery image 2" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A2.jpg" alt="Featured hero gallery image 3" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A3.jpg" alt="Featured hero gallery image 4" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A4.jpg" alt="Featured hero gallery image 5" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A5.jpg" alt="Featured hero gallery image 6" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A6.jpg" alt="Featured hero gallery image 7" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A7.jpg" alt="Featured hero gallery image 8" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A8.jpg" alt="Featured hero gallery image 9" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A11.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A12.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A13.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A14.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A15.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A16.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A17.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A18.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A19.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A20.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A21.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A22.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A23.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A24.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A25.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A26.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A27.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A28.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A29.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A30.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A31.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A32.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A33.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                  </div>
+                  <div class="scrollable-gallery">
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A40.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A41.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A42.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A43.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A44.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A45.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A46.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A47.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A48.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A49.jpg" alt="Featured hero gallery image 2" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A50.jpg" alt="Featured hero gallery image 3" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A51.jpg" alt="Featured hero gallery image 4" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A52.jpg" alt="Featured hero gallery image 5" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A53.jpg" alt="Featured hero gallery image 6" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A54.jpg" alt="Featured hero gallery image 7" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A55.jpg" alt="Featured hero gallery image 8" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A56.jpg" alt="Featured hero gallery image 9" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A57.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A58.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A59.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A60.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A61.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                    <div class="gallery-card">
+                      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/Andrey/A62.jpg" alt="Featured hero gallery image 1" loading="lazy">
+                    </div>
+                  </div>
+                </div>
+            </div>
+    </section>
+
+    <div class="andrey-modal" id="andrey-modal" hidden>
+      <section class="andrey-modal-content" role="dialog" aria-modal="true" aria-labelledby="andrey-modal-title">
+        <h2 id="andrey-modal-title"><span class="lang-en">Digital Drinking Games</span><span class="lang-ar hidden">ألعاب الشرب الرقمية</span></h2>
+
+        <div class="andrey-video-feature">
+          <h3><span class="lang-en">Digital Cheers For the Team: Do not throw things at me this week. Jacob took special pictures for homeland security and he didn't get one.</span><span class="lang-ar hidden">تحيات رقمية للفريق</span></h3>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/wUqJU2u53Qc" title="Digital Cheers For the Team" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="andrey-video-feature">
+          <h3><span class="lang-en">They will choke on our peace. We keep the dialogs open.</span><span class="lang-ar hidden">نحتاج إلى مشروب ثانٍ بعد هذا الأسبوع. نحن نحافظ على الحوارات مفتوحة. تذكر ذلك.</span></h3>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/xnjUgsPZ9XE" title="We both need a second drink after this week" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+           <div class="andrey-video-feature">
+          <h3><span class="lang-en">Did we get the State of Palestine this week? Nope. Try again next week. I am not going anywhere without it.</span><span class="lang-ar hidden">هل حصلنا على دولة فلسطين هذا الأسبوع؟ لا. حاول مرة أخرى الأسبوع المقبل.</span></h3>
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/uDmAy0vIgM0" title="Did we get the State of Palestine this week?" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="andrey-modal-actions">
+          <button class="modal-back-button" id="andrey-modal-back" type="button"><span class="lang-en">Back</span><span class="lang-ar hidden">رجوع</span></button>
+          <a class="andrey-profile-link" href="hero.html#journalist-13"><span class="lang-en">Learn More About Andrey</span><span class="lang-ar hidden">تعرّف أكثر على أندريه</span></a>
+        </div>
+      </section>
+    </div>
+
+<!-- Section 4: Explore -->
+
+    <section class="section explore-section" id="links">
+      <div class="explore-heading">
+        <h3 class="section-title">
+          <span class="lang-en">Explore</span>
+          <span class="lang-ar hidden">استكشف</span>
+        </h3>
+        <p class="explore-kicker">
+          <span class="lang-en">Stories <span aria-hidden="true">•</span> People <span aria-hidden="true">•</span> Places <span aria-hidden="true">•</span> Possibilities</span>
+          <span class="lang-ar hidden">قصص <span aria-hidden="true">•</span> أشخاص <span aria-hidden="true">•</span> أماكن <span aria-hidden="true">•</span> إمكانيات</span>
+        </p>
+        <p class="explore-intro">
+          <span class="lang-en">A closer look at a more humane world.</span>
+          <span class="lang-ar hidden">نظرة أقرب إلى عالم أكثر إنسانية.</span>
+        </p>
+      </div>
+
+      <div class="explore-grid">
+        <article class="explore-card">
+          <div class="explore-image-frame"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/maint/10003.jpg" alt="Explore Influencers" loading="lazy"></div>
+          <h4 class="explore-card-title"><span class="lang-en">Palestinian Influencers</span><span class="lang-ar hidden">المؤثرون الفلسطينيون</span></h4>
+          <a href="link.html" target="_blank" class="explore-button"><span class="lang-en">Learn More</span><span class="lang-ar hidden">اعرف المزيد</span><span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="explore-card">
+          <div class="explore-image-frame"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/maint/10004.jpg" alt="Explore Heroes" loading="lazy"></div>
+          <h4 class="explore-card-title"><span class="lang-en">Palestinian Heroes</span><span class="lang-ar hidden">أبطال فلسطينيون</span></h4>
+          <a href="hero.html" target="_blank" class="explore-button"><span class="lang-en">Learn More</span><span class="lang-ar hidden">اعرف المزيد</span><span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="explore-card">
+          <div class="explore-image-frame"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/maint/10005.jpg" alt="Explore Speak" loading="lazy"></div>
+          <h4 class="explore-card-title"><span class="lang-en">Palestine Speak</span><span class="lang-ar hidden">صوت فلسطين</span></h4>
+          <a href="face.html" target="_blank" class="explore-button"><span class="lang-en">Learn More</span><span class="lang-ar hidden">اعرف المزيد</span><span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="explore-card">
+          <div class="explore-image-frame"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/maint/10006.jpg" alt="Explore Faith" loading="lazy"></div>
+          <h4 class="explore-card-title"><span class="lang-en">Palestine Faith</span><span class="lang-ar hidden">إيمان فلسطين</span></h4>
+          <a href="faith.html" target="_blank" class="explore-button"><span class="lang-en">Learn More</span><span class="lang-ar hidden">اعرف المزيد</span><span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="explore-card">
+          <div class="explore-image-frame"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/maint/10008.jpg" alt="Explore Online School" loading="lazy"></div>
+          <h4 class="explore-card-title"><span class="lang-en">Online School</span><span class="lang-ar hidden">المدرسة الإلكترونية</span></h4>
+          <a href="edu.html" target="_blank" class="explore-button"><span class="lang-en">Learn More</span><span class="lang-ar hidden">اعرف المزيد</span><span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="explore-card">
+          <div class="explore-image-frame"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/maint/10009.jpg" alt="Explore Art" loading="lazy"></div>
+          <h4 class="explore-card-title"><span class="lang-en">Art of Palestine</span><span class="lang-ar hidden">فن فلسطين</span></h4>
+          <a href="art.html" target="_blank" class="explore-button"><span class="lang-en">Learn More</span><span class="lang-ar hidden">اعرف المزيد</span><span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="explore-card">
+          <div class="explore-image-frame"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/maint/10010.jpg" alt="Explore Love Letter" loading="lazy"></div>
+          <h4 class="explore-card-title"><span class="lang-en">To Palestine, with Love</span><span class="lang-ar hidden">إلى فلسطين، بكل حب</span></h4>
+          <a href="letter.html" target="_blank" class="explore-button"><span class="lang-en">Learn More</span><span class="lang-ar hidden">اعرف المزيد</span><span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="explore-card explore-card-feature">
+          <div class="explore-image-frame"><img src="https://raw.githubusercontent.com/american-nobody999/One-match/main/images/rose3.png" alt="Enter The Rose Garden, a garden of remembrance" loading="lazy"></div>
+          <h4 class="explore-card-title"><span class="lang-en">The Rose Garden</span><span class="lang-ar hidden">حديقة الورود</span></h4>
+          <a href="rose.html" class="explore-button"><span class="lang-en">Enter the Garden</span><span class="lang-ar hidden">ادخل الحديقة</span><span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="explore-card explore-card-feature">
+          <div class="explore-image-frame"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/index/letter.jpeg" alt="Open the featured letter" class="breathing-image" loading="lazy"></div>
+          <h4 class="explore-card-title"><span class="lang-en">Featured Letter</span><span class="lang-ar hidden">الرسالة المميزة</span></h4>
+          <button class="explore-button explore-letter-trigger" id="letter-feature-trigger" type="button" aria-haspopup="dialog" aria-controls="letter-modal"><span class="lang-en">Open the Letter</span><span class="lang-ar hidden">افتح الرسالة</span><span aria-hidden="true">→</span></button>
+        </article>
+
+        <article class="explore-card">
+          <a href="flip.html" class="explore-image-frame"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/edu/flip/myuz.jpg" alt="Ahmed Myuz of the Myuz Center for Psychological Support in Gaza" loading="lazy"></a>
+          <h4 class="explore-card-title"><span class="lang-en">Flipping the World for Palestine</span><span class="lang-ar hidden">نقلب العالم من أجل فلسطين</span></h4>
+          <a href="flip.html" class="explore-button"><span class="lang-en">Learn More</span><span class="lang-ar hidden">اعرف المزيد</span><span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="explore-card explore-card-feature">
+          <a href="reddoor.html" target="_blank" rel="noopener" class="explore-image-frame"><img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/legal/2128.jpg" alt="Open the Red Door Security Repository" loading="lazy"></a>
+          <h4 class="explore-card-title"><span class="lang-en">Red Door Security Repository</span><span class="lang-ar hidden">مستودع أمن الباب الأحمر</span></h4>
+          <a href="reddoor.html" target="_blank" rel="noopener" class="explore-button"><span class="lang-en">Open Red Door</span><span class="lang-ar hidden">افتح الباب الأحمر</span><span aria-hidden="true">→</span></a>
+        </article>
+
+        <article class="explore-card">
+          <a href="https://LeslieMBrock.github.io/Biosite" target="_blank" rel="noopener noreferrer" class="explore-image-frame">
+            <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/14.png"
+                 alt="Palestine Flag"
+                 class="div-img"
+                 loading="lazy">
+          </a>
+          <h4 class="explore-card-title">
+            <a href="https://LeslieMBrock.github.io/Biosite" target="_blank" rel="noopener noreferrer">
+              <span class="lang-en">Release the Healthcare Hostages</span>
+              <span class="lang-ar hidden">أطلقوا سراح الرهائن من العاملين في الرعاية الصحية</span>
+            </a>
+          </h4>
+          <a href="https://LeslieMBrock.github.io/Biosite" target="_blank" rel="noopener noreferrer" class="explore-button"><span class="lang-en">Learn More</span><span class="lang-ar hidden">اعرف المزيد</span><span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+
+<!-- Section 5: This is the State of  Palestine -->
+
+    <section class="section this-state" id="this-state">
+    <h3 class="section-title">
+      <span class="lang-en">This is the State of Palestine</span>
+      <span class="lang-ar">هذه هي دولة فلسطين</span>
+      </h3>
+        <div class="links-gallery scrollable-gallery state-image-gallery">
+          <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/legal/2118.jpg" alt="State gallery image 1" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/legal/2119.jpg" alt="State gallery image 2" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/legal/2120.jpg" alt="State gallery image 3" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/legal/2121.jpg" alt="State gallery image 4" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/legal/2122.jpg" alt="State gallery image 5" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/legal/2123.jpg" alt="State gallery image 6" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/legal/2124.jpg" alt="State gallery image 7" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/legal/2125.jpg" alt="State gallery image 8" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/legal/2126.jpg" alt="State gallery image 9" loading="lazy">
+          </div>
+          <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/legal/2127.jpg" alt="State gallery image 10" loading="lazy">
+          </div>
+        </div>
+    </section>
+
+<!--Section 6: Return the Doctor-->
+
+    <section class="section scrollable-gallery-section">
+  <h2>
+        <span class="lang-en">Return Doctor Abu Safiya</span>
+        <span class="lang-ar hidden">عودة الدكتور أبو صفية</span>
+  </h2>
+ <div class="scrollable-gallery">
+  <!--Gallery card with link to biotsite
+    <div class="gallery-card">
+     <a href="https://raw.githubusercontent.com/american-nobody999/biosite/main/index.html" target="_blank">
+       <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/1703.jpg" alt="Return Doctor Abu Safiya" loading="lazy">
+       <caption>
+         <span class="lang-en">Click me</span>
+         <span class="lang-ar hidden">عودة الدكتور أبو صفية</span>
+       </caption>
+     </a>
+   </div>
+    -->
+   <div class="gallery-card">
+      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/1408.jpg" alt="Return Doctor Abu Safiya" loading="lazy">
+    </div>
+    <div class="gallery-card">
+      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/1800.jpg" alt="Return Doctor Abu Safiya" loading="lazy">
+    </div>
+    <div class="gallery-card">
+      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/1801.jpg" alt="Return Doctor Abu Safiya" loading="lazy">
+    </div>
+    <div class="gallery-card">
+      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/1802.jpg" alt="Return Doctor Abu Safiya" loading="lazy">
+    </div>
+    <div class="gallery-card">
+      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/1803.jpg" alt="Return Doctor Abu Safiya" loading="lazy">
+    </div>
+    <div class="gallery-card">
+      <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/1804.jpg" alt="Return Doctor Abu Safiya" loading="lazy">
+    </div>
+  </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+        <div class="footer-container">
+        <div class="footer-row">
+          <a href="legal.html" class="footer-btn footer-btn-left">
+            <span class="lang-en">Legal</span>
+            <span class="lang-ar">قانوني</span>
+          </a>
+
+          <div class="footer-content">
+            <img src="images/40.jpg" alt="" class="footer-img" loading="lazy">
+            <p class="footer-text">
+              <span class="lang-en">From the Ashes, A State rises</span>
+              <span class="lang-ar">من الرماد، تنهض دولة</span>
+            </p>
+            <p class="copyright">
+              <span class="lang-en">&copy; 2026 American Nobody999</span>
+              <span class="lang-ar">&copy; 2026 أمريكان نوبودي999</span>
+            </p>
+          </div>
+          <a href="contact.html" class="footer-btn footer-btn-right">
+            <span class="lang-en">Contact Us</span>
+            <span class="lang-ar">اتصل بنا</span>
+          </a>
+            </div>
+        </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
+
   <div class="letter-content">
           <h3 class="section-date">
       <span class="lang-en">Friday, August 21, 2026</span>
