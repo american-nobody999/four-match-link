@@ -70,3 +70,742 @@ theres things in here even I cant find.
           L
           </p>
     </div>
+
+<!--
+MPAG: Education page
+Leslie Brockman
+Date last modified: 2026-08-015
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="American Nobody999">
+
+<!--For SQL and better accesibility-->
+    <meta name="description" content="Bilingual educational and advocacy platform featuring stories, journalism, historical resources, cultural content, and community voices.">
+    <title>Make Palestine Great Again - MPGA</title>
+    
+<!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&amp;display=swap" rel="stylesheet">
+    
+<!-- Styles -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body class="edu-page">
+
+    <header class="site-header">
+     <div class="header-container">
+            
+<!-- Logo - Left Side-waiting for logo contest from Palestinians -->
+       <div class="header-logo">
+                <img src="images/001.jpg" alt="MPGA Logo - Make Palestine Great Again" class="logo-img" loading="lazy">
+        </div>
+
+<!-- Center Content, don't touch this for now -->
+<!-- lang-en and lang-ar are classes for the whole website language toggle, js rule rewritten to avoid having to manually change each element -->
+        <div class="header-center">
+            <h1 class="site-title">
+                <span class="lang-en">State of Palestine</span>
+                <span class="lang-ar">دولة فلسطين</span>
+            </h1>
+                
+<!-- Language Toggle - Directly under h1 for functionality--gets lost if moved into the nav-- leave this alone -->
+              <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">
+                    English | العربية
+              </button>
+
+<!-- Navigation - Centered under button-colors, hover effects, and active state handled by CSS, will change baised on Palestine design-->
+              <nav class="main-nav" aria-label="Main navigation">
+                <ul class="nav-menu">
+                  <li><a href="index.html" class="nav-btn active">
+                      <span class="lang-en">Home</span>
+                      <span class="lang-ar">الرئيسية</span>
+                  </a></li>
+                  <li><a href="mpga.html" class="nav-btn">
+                        <span class="lang-en">MPGA</span>
+                        <span class="lang-ar">MPGA</span>
+                  </a></li>
+                  <li><a href="united.html" class="nav-btn">
+                      <span class="lang-en">United</span>
+                      <span class="lang-ar">متحدون</span>
+                </a></li>
+                  <li><a href="leslie.html" class="nav-btn">
+                    <span class="lang-en">Leslie</span>
+                    <span class="lang-ar">ليزلي</span>
+                  </a></li>
+                    <li><a href="about.html" class="nav-btn">
+                      <span class="lang-en">About Us</span>
+                      <span class="lang-ar">من نحن</span>
+                    </a></li>
+                  </ul>
+              </nav>
+            </div>
+
+<!-- Hamburger for Mobile--DO NOT TOUCH THIS!!!!!--EVER!-->
+            <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+  <main class="edu-main">
+    <section class="edu-1">
+    <div class="edu-content">
+      <h2>
+        <span class="edu-title-en lang-en">Education and Advocacy</span>
+        <span class="edu-title-ar lang-ar hidden">التعليم والدعوة</span>
+        </h2>
+        <p>
+        <span class="edu-text-en lang-en">Welcome to MPGA's online educational platform. Here, you will find a variety of resources designed to support learning and advocacy efforts. We must continue to strive to provide Palestinian Youth opportunities for growth in any way we can.</span>
+        <span class="edu-text-ar lang-ar hidden">مرحبًا بكم في منصتنا التعليمية والدعوية ثنائية اللغة. هنا، ستجدون مجموعة متنوعة من الموارد المصممة لدعم التعلم وجهود المناصرة. يجب أن نستمر في السعي لتوفير فرص للنمو للشباب الفلسطينيين بأي طريقة ممكنة.</span>
+        </p>
+  </div>
+</section>
+
+<!-- Main Gift -->
+  <section class="gift-container">
+    <img
+      id="giftImage"
+      class="gift-image"
+      src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/edu/edu1.png"
+      alt="Red gift box with green ribbon and Palestine flag tag"
+    >
+  </section>
+
+  <!-- Popup Overlay -->
+  <div
+    id="popupOverlay"
+    class="popup-overlay"
+    aria-hidden="true"
+  >
+
+    <div
+      class="popup"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="popupCaption"
+    >
+      <div class="balloon-cluster" aria-hidden="true">
+        <span class="balloon balloon-1"></span>
+        <span class="balloon balloon-2"></span>
+        <span class="balloon balloon-3"></span>
+        <span class="balloon balloon-4"></span>
+        <span class="balloon balloon-5"></span>
+        <span class="balloon balloon-6"></span>
+      </div>
+
+      <!-- Popup Images -->
+      <div class="popup-images">
+
+        <figure>
+          <a href="circus.html#gazacircus">
+            <img
+              src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/edu/circus/gazacircus.jpg"
+              alt="Gaza Circus popup image"
+            >
+          </a>
+        </figure>
+
+        <figure>
+          <a href="circus.html#tito">
+            <img
+              src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/edu/circus/tito.jpg"
+              alt="Circus Tito popup image"
+            >
+          </a>
+        </figure>
+
+        <figure>
+          <a href="circus.html#aloosh">
+            <img
+              src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/edu/circus/Abood.jpg"
+              alt="Abrood popup image"
+            >
+          </a>
+        </figure>
+
+      </div>
+
+      <!-- Caption -->
+      <figcaption id="popupCaption">
+
+        Click Me Again
+
+        <span class="arabic">
+          اضغط هنا مرة أخرى
+        </span>
+
+      </figcaption>
+
+      <!-- Back Button -->
+      <button
+        id="backButton"
+        class="back-button"
+        type="button"
+      >
+        ← Back
+      </button>
+
+    </div>
+
+  </div>
+
+  </div>
+</section>
+
+
+<section class="edu-2">
+  <div class="image-gallery-section">
+    <h2>
+      <span class="gallery-title-en">Education Gallery</span>
+      <span class="gallery-title-ar hidden">معرض التعليم</span>
+    </h2>
+    <div class="image-gallery">
+      <div class="image-container">
+        <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/100.webp" alt="Education Image 1" loading="lazy">
+      </div>
+      <div class="image-container">
+        <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/101.png" alt="Education Image 2" loading="lazy">
+      </div>
+      <div class="image-container">
+        <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/102.png" alt="Education Image 3" loading="lazy">
+      </div>
+      <div class="image-container">
+        <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/103.webp" alt="Education Image 4" loading="lazy">
+      </div>
+      <div class="image-container">
+        <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/104.jpg" alt="Education Image 5" loading="lazy">
+      </div>
+      <div class="image-container">
+        <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/105.jpg" alt="Education Image 6" loading="lazy">
+      </div>
+      <div class="image-container">
+        <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/106.jpg" alt="Education Image 7" loading="lazy">
+      </div>
+      <div class="image-container">
+        <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/107.webp" alt="Education Image 8" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="edu-3">
+  <div class="video-gallery-section">
+    <h2>
+      <span class="gallery-title-en">Animals are too Funny</span>
+      <span class="gallery-title-ar hidden">الحيوانات مضحكة جدًا</span>
+    </h2>
+    <div class="video-gallery">
+      <div class="video-container">
+        <video controls preload="none" loading="lazy">
+          <source src="https://raw.githubusercontent.com/american-nobody999/two-match-video/main/video2/20260216_1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay hidden">
+          <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0009.jpg" alt="overlay" loading="lazy">
+          <button class="replay-btn">⟲</button>
+        </div>
+        <button class="initial-play-btn">▶</button>
+      </div>
+      <div class="video-container">
+        <video controls preload="none" loading="lazy">
+          <source src="https://raw.githubusercontent.com/american-nobody999/two-match-video/main/video2/20260216_35.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay hidden">
+          <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0009.jpg" alt="overlay" loading="lazy">
+          <button class="replay-btn">⟲</button>
+        </div>
+        <button class="initial-play-btn">▶</button>
+      </div>
+      <div class="video-container">
+        <video controls preload="none" loading="lazy">
+          <source src="https://raw.githubusercontent.com/american-nobody999/two-match-video/main/video2/20260216_3.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay hidden">
+          <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0009.jpg" alt="overlay" loading="lazy">
+          <button class="replay-btn">⟲</button>
+        </div>
+        <button class="initial-play-btn">▶</button>
+      </div>
+      <div class="video-container">
+        <video controls preload="none" loading="lazy">
+          <source src="https://raw.githubusercontent.com/american-nobody999/two-match-video/main/video2/20260216_2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay hidden">
+          <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0009.jpg" alt="overlay" loading="lazy">
+          <button class="replay-btn">⟲</button>
+        </div>
+        <button class="initial-play-btn">▶</button>
+      </div>
+      <div class="video-container">
+        <video controls preload="none" loading="lazy">
+          <source src="https://raw.githubusercontent.com/american-nobody999/two-match-video/main/video2/02062026_4.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay hidden">
+          <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0009.jpg" alt="overlay" loading="lazy">
+          <button class="replay-btn">⟲</button>
+        </div>
+        <button class="initial-play-btn">▶</button>
+      </div>
+      <div class="video-container">
+        <video controls preload="none" loading="lazy">
+          <source src="https://raw.githubusercontent.com/american-nobody999/two-match-video/main/video2/02062026_24.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay hidden">
+          <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0009.jpg" alt="overlay" loading="lazy">
+          <button class="replay-btn">⟲</button>
+        </div>
+        <button class="initial-play-btn">▶</button>
+      </div>
+      <div class="video-container">
+        <video controls preload="none" loading="lazy">
+          <source src="https://raw.githubusercontent.com/american-nobody999/two-match-video/main/video2/02062026_20.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay hidden">
+          <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0009.jpg" alt="overlay" loading="lazy">
+          <button class="replay-btn">⟲</button>
+        </div>
+        <button class="initial-play-btn">▶</button>
+      </div>
+      <div class="video-container">
+        <video controls preload="none" loading="lazy">
+          <source src="https://raw.githubusercontent.com/american-nobody999/two-match-video/main/video/01272025_7.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay hidden">
+          <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0009.jpg" alt="overlay" loading="lazy">
+          <button class="replay-btn">⟲</button>
+        </div>
+        <button class="initial-play-btn">▶</button>
+      </div>
+      <div class="video-container">
+        <video controls preload="none" loading="lazy">
+          <source src="https://raw.githubusercontent.com/american-nobody999/two-match-video/main/video/01272025_24.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay hidden">
+          <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0009.jpg" alt="overlay" loading="lazy">
+          <button class="replay-btn">⟲</button>
+        </div>
+        <button class="initial-play-btn">▶</button>
+      </div>
+      <div class="video-container">
+        <video controls preload="none" loading="lazy">
+          <source src="https://raw.githubusercontent.com/american-nobody999/two-match-video/main/video/01272025_29.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay hidden">
+          <img src="https://raw.githubusercontent.com/american-nobody999/three-match-image/main/image/0009.jpg" alt="overlay" loading="lazy">
+          <button class="replay-btn">⟲</button>
+        </div>
+        <button class="initial-play-btn">▶</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="math-flashcards" aria-labelledby="practice-flashcards-title">
+  <div class="edu-content-section">
+    <h2 id="practice-flashcards-title">
+      <span class="lang-en">More Math Flashcards</span>
+      <span class="lang-ar">المزيد من بطاقات الرياضيات</span>
+    </h2>
+    <p>
+      <span class="lang-en">Practice addition, subtraction, multiplication, and division.</span>
+      <span class="lang-ar">تدرّب على الجمع والطرح والضرب والقسمة.</span>
+    </p>
+    <ol class="math-instructions">
+      <li>
+        <span class="lang-en">Choose an operation and press Start.</span>
+        <span class="lang-ar">اختر عملية حسابية واضغط على ابدأ.</span>
+      </li>
+      <li>
+        <span class="lang-en">Read the question, then flip the card to see the answer.</span>
+        <span class="lang-ar">اقرأ السؤال، ثم اقلب البطاقة لرؤية الإجابة.</span>
+      </li>
+      <li>
+        <span class="lang-en">Enter your answer and press Check Answer.</span>
+        <span class="lang-ar">اكتب إجابتك واضغط على تحقق من الإجابة.</span>
+      </li>
+      <li>
+        <span class="lang-en">Continue through the cards and review your score at the end.</span>
+        <span class="lang-ar">تابع حل البطاقات وراجع نتيجتك في النهاية.</span>
+      </li>
+    </ol>
+
+    <div class="flashcard-operations">
+      <div class="flashcard-operation" data-operation="addition">
+        <h3>
+          <span class="lang-en">Addition</span>
+          <span class="lang-ar">الجمع</span>
+        </h3>
+        <button class="btn-start" type="button" onclick="App.start()"><span class="lang-en">Start</span><span class="lang-ar">ابدأ</span></button>
+        <div class="stats" role="status" aria-live="polite">
+          <span class="stat stat-progress" id="progress">Card 1 of 20</span>
+          <span class="stat stat-timer" id="timer" aria-label="Timer">⏱ 0:00</span>
+          <span class="stat stat-correct" id="scoreCorrect" aria-label="Correct answers">✓ 0</span>
+          <span class="stat stat-wrong" id="scoreWrong" aria-label="Incorrect answers">✗ 0</span>
+        </div>
+        <div class="card-scene">
+          <button class="card" id="card" type="button" aria-label="Flashcard. Press to flip" onclick="App.flip()">
+            <span class="card-face card-front">
+              <span class="face-label">Question</span>
+              <span class="question" id="question">7 + 5</span>
+              <span class="hint">Click or press Space to flip</span>
+            </span>
+            <span class="card-face card-back">
+              <span class="face-label">Answer</span>
+              <span class="answer" id="answer">12</span>
+            </span>
+          </button>
+        </div>
+        <div class="answer-check" role="group" aria-label="Check your answer">
+          <label for="answerInput" class="sr-only">Your answer</label>
+          <input id="answerInput" class="answer-input" type="number" inputmode="numeric" autocomplete="off" placeholder="?" aria-describedby="answerFeedback">
+          <button class="btn-check" type="button" onclick="App.checkAnswer()"><span class="lang-en">Check Answer</span><span class="lang-ar">تحقق من الإجابة</span></button>
+          <p id="answerFeedback" class="answer-feedback" aria-live="polite"></p>
+        </div>
+        <div class="score-btns" id="scoreBtns" role="group" aria-label="Mark your answer">
+          <button class="btn-correct" type="button" onclick="App.mark(true)" aria-label="Correct answer / إجابة صحيحة">✓</button>
+          <button class="btn-wrong" type="button" onclick="App.mark(false)" aria-label="Incorrect answer / إجابة غير صحيحة">✗</button>
+        </div>
+        <div class="controls">
+          <button class="btn-nav" type="button" onclick="App.prev()" aria-label="Previous card">←</button>
+          <button class="btn-flip" type="button" onclick="App.flip()"><span class="lang-en">Flip</span><span class="lang-ar">اقلب</span></button>
+          <button class="btn-nav" type="button" onclick="App.next()" aria-label="Next card">→</button>
+          <button class="btn-shuffle" type="button" onclick="App.shuffle()"><span class="lang-en">Shuffle</span><span class="lang-ar">خلط</span></button>
+          <button class="btn-reset" type="button" onclick="App.reset()"><span class="lang-en">Reset</span><span class="lang-ar">إعادة ضبط</span></button>
+        </div>
+        <p class="footer-note">
+          <span class="lang-en">20 addition problems · Numbers 1–20</span>
+          <span class="lang-ar">20 مسألة جمع · الأعداد من 1 إلى 20</span>
+        </p>
+      </div>
+      <div class="results" id="results" role="dialog" aria-modal="true" aria-labelledby="resultsTitle" hidden>
+        <div class="results-card">
+          <h2 id="resultsTitle"><span class="lang-en">Session Complete!</span><span class="lang-ar">اكتملت الجلسة!</span></h2>
+          <div class="score-big" id="finalScore">0 / 20</div>
+          <p class="detail" id="finalCorrect">0</p>
+          <p class="detail" id="finalWrong">0</p>
+          <p class="detail" id="finalAccuracy">0%</p>
+          <p class="time-result" id="finalTime">0:00</p>
+          <button class="btn-shuffle" type="button" onclick="App.closeResults()"><span class="lang-en">Practice Again</span><span class="lang-ar">تدرّب مرة أخرى</span></button>
+        </div>
+      </div>
+
+      <div class="flashcard-operation" data-operation="subtraction">
+        <h3>
+          <span class="lang-en">Subtraction</span>
+          <span class="lang-ar">الطرح</span>
+        </h3>
+        <button class="btn-start" type="button" onclick="SubtractionApp.start()"><span class="lang-en">Start</span><span class="lang-ar">ابدأ</span></button>
+        <div class="stats" role="status" aria-live="polite">
+          <span class="stat stat-progress" id="subtraction-progress">Card 1 of 20</span>
+          <span class="stat stat-timer" id="subtraction-timer" aria-label="Timer">⏱ 0:00</span>
+          <span class="stat stat-correct" id="subtraction-scoreCorrect" aria-label="Correct answers">✓ 0</span>
+          <span class="stat stat-wrong" id="subtraction-scoreWrong" aria-label="Incorrect answers">✗ 0</span>
+        </div>
+        <div class="card-scene">
+          <button class="card" id="subtraction-card" type="button" aria-label="Flashcard. Press to flip" onclick="SubtractionApp.flip()">
+            <span class="card-face card-front">
+              <span class="face-label">Question</span>
+              <span class="question" id="subtraction-question">15 − 7</span>
+              <span class="hint">Click or press Space to flip</span>
+            </span>
+            <span class="card-face card-back">
+              <span class="face-label">Answer</span>
+              <span class="answer" id="subtraction-answer">8</span>
+            </span>
+          </button>
+        </div>
+        <div class="answer-check" role="group" aria-label="Check your answer">
+          <label for="subtraction-answerInput" class="sr-only">Your answer</label>
+          <input id="subtraction-answerInput" class="answer-input" type="number" inputmode="numeric" autocomplete="off" placeholder="?" aria-describedby="subtraction-answerFeedback">
+          <button class="btn-check" type="button" onclick="SubtractionApp.checkAnswer()"><span class="lang-en">Check Answer</span><span class="lang-ar">تحقق من الإجابة</span></button>
+          <p id="subtraction-answerFeedback" class="answer-feedback" aria-live="polite"></p>
+        </div>
+        <div class="score-btns" id="subtraction-scoreBtns" role="group" aria-label="Mark your answer">
+          <button class="btn-correct" type="button" onclick="SubtractionApp.mark(true)" aria-label="Correct answer / إجابة صحيحة">✓</button>
+          <button class="btn-wrong" type="button" onclick="SubtractionApp.mark(false)" aria-label="Incorrect answer / إجابة غير صحيحة">✗</button>
+        </div>
+        <div class="controls">
+          <button class="btn-nav" type="button" onclick="SubtractionApp.prev()" aria-label="Previous card / البطاقة السابقة">←</button>
+          <button class="btn-flip" type="button" onclick="SubtractionApp.flip()"><span class="lang-en">Flip</span><span class="lang-ar">اقلب</span></button>
+          <button class="btn-nav" type="button" onclick="SubtractionApp.next()" aria-label="Next card / البطاقة التالية">→</button>
+          <button class="btn-shuffle" type="button" onclick="SubtractionApp.shuffle()"><span class="lang-en">Shuffle</span><span class="lang-ar">خلط</span></button>
+          <button class="btn-reset" type="button" onclick="SubtractionApp.reset()"><span class="lang-en">Reset</span><span class="lang-ar">إعادة ضبط</span></button>
+        </div>
+        <p class="footer-note">
+          <span class="lang-en">20 subtraction problems</span>
+          <span class="lang-ar">20 مسألة طرح</span>
+        </p>
+      </div>
+      <div class="results" id="subtraction-results" role="dialog" aria-modal="true" aria-labelledby="subtraction-resultsTitle" hidden>
+        <div class="results-card">
+          <h2 id="subtraction-resultsTitle"><span class="lang-en">Session Complete!</span><span class="lang-ar">اكتملت الجلسة!</span></h2>
+          <div class="score-big" id="subtraction-finalScore">0 / 20</div>
+          <p class="detail" id="subtraction-finalCorrect">0</p>
+          <p class="detail" id="subtraction-finalWrong">0</p>
+          <p class="detail" id="subtraction-finalAccuracy">0%</p>
+          <p class="time-result" id="subtraction-finalTime">0:00</p>
+          <button class="btn-shuffle" type="button" onclick="SubtractionApp.closeResults()"><span class="lang-en">Practice Again</span><span class="lang-ar">تدرّب مرة أخرى</span></button>
+        </div>
+      </div>
+
+      <div class="flashcard-operation" data-operation="division">
+        <h3>
+          <span class="lang-en">Division</span>
+          <span class="lang-ar">القسمة</span>
+        </h3>
+        <button class="btn-start" type="button" onclick="DivisionApp.start()"><span class="lang-en">Start</span><span class="lang-ar">ابدأ</span></button>
+        <div class="stats" role="status" aria-live="polite">
+          <span class="stat stat-progress" id="division-progress">Card 1 of 20</span>
+          <span class="stat stat-timer" id="division-timer" aria-label="Timer">⏱ 0:00</span>
+          <span class="stat stat-correct" id="division-scoreCorrect" aria-label="Correct answers">✓ 0</span>
+          <span class="stat stat-wrong" id="division-scoreWrong" aria-label="Incorrect answers">✗ 0</span>
+        </div>
+        <div class="card-scene">
+          <button class="card" id="division-card" type="button" aria-label="Flashcard. Press to flip" onclick="DivisionApp.flip()">
+            <span class="card-face card-front">
+              <span class="face-label">Question</span>
+              <span class="question" id="division-question">12 ÷ 3</span>
+              <span class="hint">Click or press Space to flip</span>
+            </span>
+            <span class="card-face card-back">
+              <span class="face-label">Answer</span>
+              <span class="answer" id="division-answer">4</span>
+            </span>
+          </button>
+        </div>
+        <div class="answer-check" role="group" aria-label="Check your answer">
+          <label for="division-answerInput" class="sr-only">Your answer</label>
+          <input id="division-answerInput" class="answer-input" type="number" inputmode="numeric" autocomplete="off" placeholder="?" aria-describedby="division-answerFeedback">
+          <button class="btn-check" type="button" onclick="DivisionApp.checkAnswer()"><span class="lang-en">Check Answer</span><span class="lang-ar">تحقق من الإجابة</span></button>
+          <p id="division-answerFeedback" class="answer-feedback" aria-live="polite"></p>
+        </div>
+        <div class="score-btns" id="division-scoreBtns" role="group" aria-label="Mark your answer">
+          <button class="btn-correct" type="button" onclick="DivisionApp.mark(true)" aria-label="Correct answer / إجابة صحيحة">✓</button>
+          <button class="btn-wrong" type="button" onclick="DivisionApp.mark(false)" aria-label="Incorrect answer / إجابة غير صحيحة">✗</button>
+        </div>
+        <div class="controls">
+          <button class="btn-nav" type="button" onclick="DivisionApp.prev()" aria-label="Previous card / البطاقة السابقة">←</button>
+          <button class="btn-flip" type="button" onclick="DivisionApp.flip()"><span class="lang-en">Flip</span><span class="lang-ar">اقلب</span></button>
+          <button class="btn-nav" type="button" onclick="DivisionApp.next()" aria-label="Next card / البطاقة التالية">→</button>
+          <button class="btn-shuffle" type="button" onclick="DivisionApp.shuffle()"><span class="lang-en">Shuffle</span><span class="lang-ar">خلط</span></button>
+          <button class="btn-reset" type="button" onclick="DivisionApp.reset()"><span class="lang-en">Reset</span><span class="lang-ar">إعادة ضبط</span></button>
+        </div>
+        <p class="footer-note">
+          <span class="lang-en">20 division problems</span>
+          <span class="lang-ar">20 مسألة قسمة</span>
+        </p>
+      </div>
+      <div class="results" id="division-results" role="dialog" aria-modal="true" aria-labelledby="division-resultsTitle" hidden>
+        <div class="results-card">
+          <h2 id="division-resultsTitle"><span class="lang-en">Session Complete!</span><span class="lang-ar">اكتملت الجلسة!</span></h2>
+          <div class="score-big" id="division-finalScore">0 / 20</div>
+          <p class="detail" id="division-finalCorrect">0</p>
+          <p class="detail" id="division-finalWrong">0</p>
+          <p class="detail" id="division-finalAccuracy">0%</p>
+          <p class="time-result" id="division-finalTime">0:00</p>
+          <button class="btn-shuffle" type="button" onclick="DivisionApp.closeResults()"><span class="lang-en">Practice Again</span><span class="lang-ar">تدرّب مرة أخرى</span></button>
+        </div>
+      </div>
+
+      <div class="flashcard-operation" data-operation="multiplication">
+        <h3>
+          <span class="lang-en">Multiplication</span>
+          <span class="lang-ar">الضرب</span>
+        </h3>
+        <button class="btn-start" type="button" onclick="MultiplicationApp.start()"><span class="lang-en">Start</span><span class="lang-ar">ابدأ</span></button>
+        <div class="stats" role="status" aria-live="polite">
+          <span class="stat stat-progress" id="multiplication-progress">Card 1 of 20</span>
+          <span class="stat stat-timer" id="multiplication-timer" aria-label="Timer">⏱ 0:00</span>
+          <span class="stat stat-correct" id="multiplication-scoreCorrect" aria-label="Correct answers">✓ 0</span>
+          <span class="stat stat-wrong" id="multiplication-scoreWrong" aria-label="Incorrect answers">✗ 0</span>
+        </div>
+        <div class="card-scene">
+          <button class="card" id="multiplication-card" type="button" aria-label="Flashcard. Press to flip" onclick="MultiplicationApp.flip()">
+            <span class="card-face card-front">
+              <span class="face-label">Question</span>
+              <span class="question" id="multiplication-question">6 × 7</span>
+              <span class="hint">Click or press Space to flip</span>
+            </span>
+            <span class="card-face card-back">
+              <span class="face-label">Answer</span>
+              <span class="answer" id="multiplication-answer">42</span>
+            </span>
+          </button>
+        </div>
+        <div class="answer-check" role="group" aria-label="Check your answer">
+          <label for="multiplication-answerInput" class="sr-only">Your answer</label>
+          <input id="multiplication-answerInput" class="answer-input" type="number" inputmode="numeric" autocomplete="off" placeholder="?" aria-describedby="multiplication-answerFeedback">
+          <button class="btn-check" type="button" onclick="MultiplicationApp.checkAnswer()"><span class="lang-en">Check Answer</span><span class="lang-ar">تحقق من الإجابة</span></button>
+          <p id="multiplication-answerFeedback" class="answer-feedback" aria-live="polite"></p>
+        </div>
+        <div class="score-btns" id="multiplication-scoreBtns" role="group" aria-label="Mark your answer">
+          <button class="btn-correct" type="button" onclick="MultiplicationApp.mark(true)" aria-label="Correct answer / إجابة صحيحة">✓</button>
+          <button class="btn-wrong" type="button" onclick="MultiplicationApp.mark(false)" aria-label="Incorrect answer / إجابة غير صحيحة">✗</button>
+        </div>
+        <div class="controls">
+          <button class="btn-nav" type="button" onclick="MultiplicationApp.prev()" aria-label="Previous card / البطاقة السابقة">←</button>
+          <button class="btn-flip" type="button" onclick="MultiplicationApp.flip()"><span class="lang-en">Flip</span><span class="lang-ar">اقلب</span></button>
+          <button class="btn-nav" type="button" onclick="MultiplicationApp.next()" aria-label="Next card / البطاقة التالية">→</button>
+          <button class="btn-shuffle" type="button" onclick="MultiplicationApp.shuffle()"><span class="lang-en">Shuffle</span><span class="lang-ar">خلط</span></button>
+          <button class="btn-reset" type="button" onclick="MultiplicationApp.reset()"><span class="lang-en">Reset</span><span class="lang-ar">إعادة ضبط</span></button>
+        </div>
+        <p class="footer-note">
+          <span class="lang-en">20 multiplication problems</span>
+          <span class="lang-ar">20 مسألة ضرب</span>
+        </p>
+      </div>
+      <div class="results" id="multiplication-results" role="dialog" aria-modal="true" aria-labelledby="multiplication-resultsTitle" hidden>
+        <div class="results-card">
+          <h2 id="multiplication-resultsTitle"><span class="lang-en">Session Complete!</span><span class="lang-ar">اكتملت الجلسة!</span></h2>
+          <div class="score-big" id="multiplication-finalScore">0 / 20</div>
+          <p class="detail" id="multiplication-finalCorrect">0</p>
+          <p class="detail" id="multiplication-finalWrong">0</p>
+          <p class="detail" id="multiplication-finalAccuracy">0%</p>
+          <p class="time-result" id="multiplication-finalTime">0:00</p>
+          <button class="btn-shuffle" type="button" onclick="MultiplicationApp.closeResults()"><span class="lang-en">Practice Again</span><span class="lang-ar">تدرّب مرة أخرى</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+      
+  <section class="video-embed-section edu-bottom-video" aria-label="Featured education video">
+    <div class="video-wrapper">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/isYyzivMhHU"
+        title="Featured education video"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+  </section>
+
+<!--Going to pause this for now while we find and add more educational content
+ <section class="edu-5">
+  <div class="edu-content-section">
+    <h3>
+      <span class="lang-en">Palestinian History and Culture</span>
+      <span class="lang-ar hidden">التاريخ والثقافة الفلسطينية</span>
+    </h3>
+    <p>
+      <span class="lang-en">Palestine has a rich and ancient history spanning thousands of years. From the Canaanite civilization to the modern Palestinian state, this land has been a cradle of culture, spirituality, and human achievement. Our educational resources explore the layers of history, highlighting the contributions of Palestinian people to art, science, literature, and philosophy.</span>
+      <span class="lang-ar hidden">فلسطين لديها تاريخ عريق وعريق يمتد لآلاف السنين. من حضارة كنعان إلى الدولة الفلسطينية الحديثة، كانت هذه الأرض مهد الثقافة والروحانية والإنجاز الإنساني. تستكشف مواردنا التعليمية طبقات التاريخ، مع تسليط الضوء على مساهمات الشعب الفلسطيني في الفن والعلم والأدب والفلسفة.</span>
+    </p>
+    <div class="image-gallery">
+      <div class="image-container">
+        <img src="images/001.jpg" alt="Palestinian Culture" loading="lazy">
+      </div>
+      <div class="image-container">
+        <img src="images/001.jpg" alt="Palestinian Heritage" loading="lazy">
+      </div>
+      <div class="image-container">
+        <img src="images/001.jpg" alt="Palestinian Tradition" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="edu-6">
+  <div class="edu-content-section">
+    <h3>
+      <span class="lang-en">Supplemental Materials</span>
+      <span class="lang-ar hidden">المواد التكميلية</span>
+    </h3>
+    <p>
+      <span class="lang-en">This gallery will feature future sub pages of math, science, art, music, technology, languages, reading, writing, civics, basic life skills, and other age appropriate educational topics.</span>
+      <span class="lang-ar hidden">ستعرض هذه المعرض صفحات فرعية مستقبلية للرياضيات والعلوم والفن والموسيقى والتكنولوجيا واللغات والقراءة والكتابة والمهارات المدنية والمهارات الحياتية الأساسية ومواضيع تعليمية مناسبة للعمر.</span>
+    </p>
+    <div class="image-gallery">
+      <div class="image-container">
+        <img src="images/001.jpg" alt="Palestinian Culture" loading="lazy">
+      </div>
+      <div class="image-container">
+        <img src="images/001.jpg" alt="Palestinian Heritage" loading="lazy">
+      </div>
+      <div class="image-container">
+        <img src="images/001.jpg" alt="Palestinian Tradition" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="edu-6">
+  <div class="edu-content-section">
+    <h3>
+      <span class="lang-en">Building a Better Future</span>
+      <span class="lang-ar hidden">بناء مستقبل أفضل</span>
+    </h3>
+    <p>
+      <span class="lang-en">Education is the foundation for building a sustainable and equitable future. Our platform is dedicated to supporting Palestinian educational initiatives, youth development, and community empowerment. By sharing knowledge, fostering dialogue, and celebrating achievements, we contribute to a vision of peace and prosperity for all Palestinians.</span>
+      <span class="lang-ar hidden">التعليم هو الأساس لبناء مستقبل مستدام وعادل. تكرس منصتنا نفسها لدعم المبادرات التعليمية الفلسطينية وتطوير الشباب وتمكين المجتمع. من خلال تبادل المعرفة وتعزيز الحوار والاحتفال بالإنجازات، نساهم في رؤية السلام والازدهار لجميع الفلسطينيين.</span>
+    </p>
+    <div class="image-gallery">
+      <div class="image-container">
+        <img src="images/001.jpg" alt="Palestinian Future" loading="lazy">
+      </div>
+      <div class="image-container">
+        <img src="images/001.jpg" alt="Palestinian Education" loading="lazy">
+      </div>
+      <div class="image-container">
+        <img src="images/001.jpg" alt="Palestinian Youth" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+ </main>
+
+  <footer class="site-footer">
+        <div class="footer-container">
+        <div class="footer-row">
+          <a href="legal.html" class="footer-btn footer-btn-left">
+            <span class="lang-en">Legal</span>
+            <span class="lang-ar">قانوني</span>
+          </a>
+
+          <div class="footer-content">
+            <img src="images/40.jpg" alt="" class="footer-img" loading="lazy">
+            <p class="footer-text">
+              <span class="lang-en">From the Ashes, A State rises</span>
+              <span class="lang-ar">من الرماد، تنهض دولة</span>
+            </p>
+            <p class="copyright">
+              <span class="lang-en">&copy; 2026 American Nobody999</span>
+              <span class="lang-ar">&copy; 2026 أمريكي Nobody999</span>
+            </p>
+          </div>
+          <a href="contact.html" class="footer-btn footer-btn-right">
+            <span class="lang-en">Contact Us</span>
+            <span class="lang-ar">اتصل بنا</span>
+          </a>
+            </div>
+        </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/math-addition.js"></script>
+  <script src="js/math-subtraction.js"></script>
+  <script src="js/math-division.js"></script>
+  <script src="js/math-multiplication.js"></script>
+</body>
+</html>
